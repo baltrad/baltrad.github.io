@@ -1,0 +1,85 @@
+#!/opt/baltrad/third_party/bin/python
+'''
+Copyright (C) 2013- Swedish Meteorological and Hydrological Institute (SMHI)
+
+This file is part of RAVE.
+
+RAVE is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+RAVE is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with RAVE.  If not, see <http://www.gnu.org/licenses/>.
+'''
+## Command-line hello
+
+## @file
+## @author Daniel Michelson, SMHI
+## @date 2011-11-15
+
+import sys
+import _raveio
+import _hello
+
+
+def hello(options):
+    rio = _raveio.open(options.ifile)
+
+    myobj = _hello.hello(rio)
+
+    response = "Hello, file %s contents: " % options.ifile
+
+    if myobj is _raveio.Rave_ObjectType_SCAN:
+        print response + "polar scan"
+    elif myobj is _raveio.Rave_ObjectType_PVOL:
+        print response + "polar volume"
+    elif myobj is _raveio.Rave_ObjectType_IMAGE:
+        print response + "Cartesian image"
+    elif myobj is _raveio.Rave_ObjectType_COMP:
+        print response + "composite"
+    elif myobj is _raveio.Rave_ObjectType_VP:
+        print response + "vertical profile"
+    elif myobj is _raveio.Rave_ObjectType_CVOL:
+        print response + "Cartesian volume"
+    elif myobj is _raveio.Rave_ObjectType_AZIM:
+        print response + "azimuthal object"
+    elif myobj is _raveio.Rave_ObjectType_PIC:
+        print response + "graphics picture"
+    elif myobj is _raveio.Rave_ObjectType_XSEC:
+        print response + "cross section"
+    elif myobj is _raveio.Rave_ObjectType_RAY:
+        print response + "ray"
+    elif myobj is _raveio.Rave_ObjectType_UNDEFINED:
+        print response + "unknown"
+
+    rio.save(options.ofile)
+
+
+if __name__ == "__main__":
+    from optparse import OptionParser
+
+    description = "Hello tutorial"
+
+    usage = "usage: %prog -i <infile> [-o <outfile>] [h]"
+    parser = OptionParser(usage=usage, description=description)
+
+    parser.add_option("-i", "--input", dest="ifile", help="Input file name")
+    parser.add_option("-o", "--output", dest="ofile",
+                      help="Output file name. Input file will be overwritten if not specified", default=None)
+
+    (options, args) = parser.parse_args()
+
+    if not options.ifile:
+        parser.print_help()
+        sys.exit()
+
+    if not options.ofile:
+        options.ofile = options.ifile
+
+    hello(options)
