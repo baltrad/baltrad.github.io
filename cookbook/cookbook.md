@@ -1,4 +1,6 @@
-[[Image(d&g.jpg, 257px, align=right, nolink)]] Welcome to this "cookbook", where "recipes" are collected. This is intended to constitute a documentation reference collection of data processing algorithms. Each algorithm recipe is documented in a standardized way, enabling them to be coded as part of the BALTRAD code base or an external system. The important thing is that the community can focus this effort in a harmonized way.
+![BALTRAD doxlogo](/images/BALTRAD-doxlogo.png)
+
+Welcome to this "cookbook", where "recipes" are collected. This is intended to constitute a documentation reference collection of data processing algorithms. Each algorithm recipe is documented in a standardized way, enabling them to be coded as part of the BALTRAD code base or an external system. The important thing is that the community can focus this effort in a harmonized way.
 
 # Documentation
 [How to write a cookbook recipe](http://git.baltrad.eu/trac/wiki/cookbook/HOWTO)
