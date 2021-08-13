@@ -1,0 +1,92 @@
+= BALTRAD Cookbook =
+[[Image(d&g.jpg, 257px, align=right, nolink)]] Welcome to this "cookbook", where "recipes" are collected. This is intended to constitute a documentation reference collection of data processing algorithms. Each algorithm recipe is documented in a standardized way, enabling them to be coded as part of the BALTRAD code base or an external system. The important thing is that the community can focus this effort in a harmonized way.
+
+== Documentation ==
+[http://git.baltrad.eu/trac/wiki/cookbook/HOWTO How to write a cookbook recipe]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/roadmap Cookbook roadmap]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/dev-maint Development and maintenance]
+
+[wiki:cookbook/meetings Meeting minutes]
+
+== Recipes ==
+Add the new recipe under an appropriate category
+
+=== Anomalies ===
+[http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_SPIKE Removal of geometrically-shaped non-meteorological echoes and quality characterization – RADVOL-QC: SPIKE]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_NMET Removal of non-meteorological echoes and quality characterization – RADVOL-QC: NMET]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_SPECK Removal of measurement noise and quality characterization – RADVOL-QC: SPECK]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/HAC Hit-accumulation clutter filter: HAC]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/CTFILTER Identification and removal of residual non-precipitation echoes using the Meteosat Second Generation Cloud Type product: CTFILTER]
+
+=== Biological Targets ===
+=== Solar monitoring ===
+[http://git.baltrad.eu/trac/wiki/cookbook/SOLARANALYSIS Determination and analysis of solar signatures in volume data]
+
+=== Hail ===
+=== Volcanic Ash Plumes ===
+=== Beam Blockage ===
+[http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_BLOCK Correction of partial and total beam blockage and quality characterization including ground clutter – RADVOL-QC: BLOCK]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/BEAMB Analysis and correction of beam blockage due to topography: BEAMB]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/BEAM_OVERSHOOT Probability of beam overshoot / detection range analysis : BEAM_OVERSHOOT]
+=== Classifiers ===
+[http://git.baltrad.eu/trac/wiki/cookbook/BALTRAD-HMC Baltrad Hydrometeor Classifier : BALTRAD-HMC]
+
+=== Path attenuation correction ===
+[http://git.baltrad.eu/trac/wiki/cookbook/PolRainAttCorr: Polarimetric Rain Attenuation Correction : rainATTENcorrect]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_ATT Correction and quality characterization for attenuation in rain – RADVOL-QC: ATT]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/BBAND_PIA_EST_NP: Non-polarimetric integrated path attenuation estimate for melting layer at C-band: BBAND_ATTN_DIAG_SPOL_fmi]
+
+=== Quality characterization ===
+[http://git.baltrad.eu/trac/wiki/cookbook/CALID Calibration difference of two radars - CALID]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_BROAD Quality characterization due to distance to radar related effects – RADVOL-QC: BROAD]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/QIT Total quality index (QI) for scans/volumes – QI_TOTAL]
+
+=== QPE ===
+[http://git.baltrad.eu/trac/wiki/cookbook/ACRR Precipitation accumulation - ACRR]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/CONV Separation of convective and stratiform precipitation – CONVECTION]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/ADJUSTMENT Combination of radar-based ground precipitation rate and raingauge network data – COMBINATION]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/DOWNSCALE Dynamical downscaling of ground precipitation rate – DOWNSCALE]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/Networked-VPR-correction Networked VPR correction]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/RZ_DYN_OBS Dynamic R(Z) using single-polarisation data and ground observations – RZ_DYN_OBS]
+
+=== 2-D products ===
+[http://git.baltrad.eu/trac/wiki/cookbook/Product2D_PPI Quality-based PPI product generation – Product2D: PPI]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/Product2D_MAX Quality-based maximum of reflectivity (MAX) product generation – Product2D: MAX]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/Product2D_ET Quality-based echo top (ETOP) product generation – Product2D: ETOP]
+
+[http://git.baltrad.eu/trac/wiki/cookbook/Product2D_VIL Quality-based vertically integrated liquid water (VIL) product generation – Product2D: VIL]
+
+=== Compositing ===
+[http://git.baltrad.eu/trac/wiki/cookbook/QCOMP Quality-based compositing based on QI_TOTAL: QCOMP]
+
+=== Dealiasing and wind profiles ===
+[wiki:cookbook/DEALIAS Dealiasing]
+
+[wiki:cookbook/WRWP Wind profiles]
+
+=== Data visualization ===
+[wiki:cookbook/BALTRAD-WMS BALTRAD-WMS]
+
+=== Miscellaneous ===
+[wiki:cookbook/HEXED-QUANTITIES Representation of ODIM quantities as a compact string signature]
+
+[[Image(cooks.jpg, 432px, nolink)]]
