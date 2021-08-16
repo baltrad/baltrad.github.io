@@ -1,6 +1,6 @@
 ![BALTRAD doxlogo](/images/BALTRAD-doxlogo.png)
-Topic|Algorithm developer|Priority in Baltrad+ development|Recipient written (period = 6 months)|Implemented: either working version or fully operational (period)|Software provider excluding implementation |Comments|Links
------|-------------------|--------------------------------|-------------------------------------|-----------------------------------------------------------------|-------------------------------------------|--------|-----
+|Topic|Algorithm developer|Priority in Baltrad+ development|Recipient written (period = 6 months)|Implemented: either working version or fully operational (period)|Software provider excluding implementation |Comments|Links|
+|-----|-------------------|--------------------------------|-------------------------------------|-----------------------------------------------------------------|-------------------------------------------|--------|-----|
 [wiki:cookbook/ACRR Accumulation_NN (mm)] | FMI & SMHI (Daniel, Harri) | +++ | [[BR]]2[[BR]] | 2 | SMHI & FMI | Done |
 || Satellite-based diagnosis and removal of non-meteorological echoes || SMHI || +++ || 2 || 4 || SMHI || Requires functionality to read MSG satellite product. *Action:* GH will ask AH for status. || ||
 || Polarimetric classification of scatterers || DMI [[BR]] || +++ || 2 || 4 || DMI || PPI version available. Full volume HMC will be ready by the end of 2013. || ||
