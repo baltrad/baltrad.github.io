@@ -1,4 +1,5 @@
 ![BALTRAD doxlogo](/images/BALTRAD-doxlogo.png)
+
 |Topic|Algorithm developer|Priority in Baltrad+ development|Recipient written (period = 6 months)|Implemented: either working version or fully operational (period)|Software provider excluding implementation |Comments|Links|
 |-----|-------------------|--------------------------------|-------------------------------------|-----------------------------------------------------------------|-------------------------------------------|--------|-----|
 [wiki:cookbook/ACRR Accumulation_NN (mm)] | FMI & SMHI (Daniel, Harri) | +++ | [[BR]]2[[BR]] | 2 | SMHI & FMI | Done |
