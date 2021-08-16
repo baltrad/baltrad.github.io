@@ -1,3 +1,5 @@
+![BALTRAD doxlogo](/images/BALTRAD-doxlogo.png)
+
 Algorithms included in the cookbook shall be documented by writing a wiki page for each algorithm, under the [cookbook](https://github.com:baltrad/baltrad.github.io/cookbook) directory. A recipe shall be written before a new algorithm is implemented technically.
 
 A “recipe” in the cookbook shall contain the following sections, in order:
@@ -12,16 +14,16 @@ A “recipe” in the cookbook shall contain the following sections, in order:
 ## a) What kind of radar data (including the list of previous algorithms and quality flags applied)
 ## b) Other data (optional and mandatory, applying “universally” agreed formats, geometry)
 # 5. Logical steps, using any of: text, flow charts, graphics, equations (or references to equations), conditional branches in “all possible cases”.
-Besides normal text, we can add "interactive" diagrams using Graphviz markup, e.g.
-
+Besides normal text, we can add "interactive" diagrams using Graphviz markup,
 	
-	'''viz
+	<!--
 	digraph G {Hello->World->BALTRAD->Cookbook}
-	'''
+	-->
+![Example diagram](https://g.gravizo.com/svg?digraph%20G%20{Hello-%3EWorld-%3EBALTRAD-%3ECookbook})
+	
 We can also attach static graphics, ie. images created externally.
 
 Equations can be added using LaTeX notation, e.g.
-
 	
 	'''math
 	\overline{P_r} = \frac{P_t G^2 \lambda^2 \theta \phi h L}
