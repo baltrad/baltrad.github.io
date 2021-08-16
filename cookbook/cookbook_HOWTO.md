@@ -16,19 +16,17 @@ A “recipe” in the cookbook shall contain the following sections, in order:
 # 5. Logical steps, using any of: text, flow charts, graphics, equations (or references to equations), conditional branches in “all possible cases”.
 Besides normal text, we can add "interactive" diagrams using Graphviz markup,
 	
-	<!--
+	```dot
 	digraph G {Hello->World->BALTRAD->Cookbook}
-	-->
-![Example diagram](https://g.gravizo.com/svg?digraph%20G%20{Hello-%3EWorld-%3EBALTRAD-%3ECookbook})
+	```
+<!--![Example diagram](https://g.gravizo.com/svg?digraph G {Hello->World->BALTRAD->Cookbook})-->
 	
-We can also attach static graphics, ie. images created externally.
-
 Equations can be added using LaTeX notation, e.g.
 	
-	'''math
+	```math
 	\overline{P_r} = \frac{P_t G^2 \lambda^2 \theta \phi h L}
 	{512(2 \ln 2) \pi^2 r^2} \frac{1}{\Delta v} \sum_{vol} \sigma_i $
-	'''
+	```
 	
 Tables can be created using the WYSIWYG functionality, e.g.
 
