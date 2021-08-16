@@ -23,11 +23,11 @@ Besides normal text, we can add "interactive" diagrams using Graphviz markup,
 	
 Equations can be added using LaTeX notation, e.g.
 	
-	<img src="https://render.githubusercontent.com/render/math?math=\overline{P_r} = \frac{P_t G^2 \lambda^2 \theta \phi h L}{512(2 \ln 2) \pi^2 r^2} \frac{1}{\Delta v} \sum_{vol} \sigma_i" />
-	```math
-	\overline{P_r} = \frac{P_t G^2 \lambda^2 \theta \phi h L}
-	{512(2 \ln 2) \pi^2 r^2} \frac{1}{\Delta v} \sum_{vol} \sigma_i $
-	```
+<img src="https://render.githubusercontent.com/render/math?math=\overline{P_r} = \frac{P_t G^2 \lambda^2 \theta \phi h L}{512(2 \ln 2) \pi^2 r^2} \frac{1}{\Delta v} \sum_{vol} \sigma_i" />
+```math
+\overline{P_r} = \frac{P_t G^2 \lambda^2 \theta \phi h L}
+{512(2 \ln 2) \pi^2 r^2} \frac{1}{\Delta v} \sum_{vol} \sigma_i $
+```
 	
 Tables can be created using the WYSIWYG functionality, e.g.
 
