@@ -1,0 +1,46 @@
+![BALTRAD doxlogo](/images/BALTRAD-doxlogo.png)
+
+||||||||6 months) =||||||||||
+|| [wiki:cookbook/ACRR Accumulation_NN (mm)] || FMI & SMHI (Daniel, Harri) || +++ || [[BR]]2[[BR]] || 2 || SMHI & FMI || Done || ||
+|| Satellite-based diagnosis and removal of non-meteorological echoes || SMHI || +++ || 2 || 4 || SMHI || Requires functionality to read MSG satellite product. *Action:* GH will ask AH for status. || ||
+|| Polarimetric classification of scatterers || DMI [[BR]] || +++ || 2 || 4 || DMI || PPI version available. Full volume HMC will be ready by the end of 2013. || ||
+|| Pointing angle applying the Sun || FMI (Mikko, Asko), [[BR]] SMHI[[BR]] || +++ || 2 || 4 || SMHI || First version implemented using KNMIs code by SMHI, improvements to be added by FMI. Locally implemented at FMI. *Action:* JK provides documentation and ask SMHI if the algorithm can be integrated into the toolbox. || ||
+|| Real time absolute power calibration applying the Sun || FMI (Mikko, Asko) || +++ || || || || FMI requires R&D before implementation. This is an agreed OPERA 4 task 2015. || ||
+|| Real time relative power calibration of the network applying the Sun || FMI (Mikko, Asko) || +++ || 2 || 4 || FMI || FMI requires R&D before implementation,  monitoring part implemented at FMI, but real time adjustment applying the data not done. Algorithm ready and tested at FMI. *Action:* JK provides documentation and ask SMHI if the algorithm can be integrated into the toolbox. || ||
+|| Real time relative power calibration of the network applying overlapping radar pairs || FMI (Mikko, Asko), IMGW || +++ || ? || ? || ? || Has been tested at FMI, but present status unclear. Asko and IMGW (Lukasz) should be contacted || ||
+|| Real time ZDR calibration applying the Sun || FMI (Mikko, Asko) || +++ || ? || ? || ? || Has been tested at FMI, but present status unclear. Mikko and IMGW (Lukasz) should be contacted || ||
+|| [wiki:diagnosis-of-the-height-and-intensity-of-the-bright-band Diagnosis of the height and intensity of the bright band][[BR]]a image based[[BR]]c =  dual pol. based || a) FMI (Jarmo 0.5 wm /VPR output), SMHI[[BR]]b)[[BR]]c) [[BR]] || +++ || 2 [[BR]] || 3 [[BR]] || FMI (Markus & Joonas 1 wm), [[BR]] SMHI (Günther) , [[BR]] || a) Diagnostics readily available from the existing VPR-correction. Requires that melting-layer heights be available from NWP. [[BR]]b)[[BR]]c) || ||
+|| [wiki:BBLOCK_NEAR Near-range beam blockage correction applying radar data (without DEM)] || FMI (Harri 0.5 wm) || +++ || 2 || 3 || FMI (Joonas 2 wm) || Based on accumulations per azimuth. Requires high-precision ie. 16-bit Z data.[[BR]] || ||
+|| Polarimetric path attenuation correction || FMI (Pekka R), DMI || +++ || 1 (FMI 1) || 1 || DMI || Make this functionality stand-alone. At FMI  the solution is obtained from Vaisala (Reino). Derivation either in DSP  or in post-proseccing. Only the latter solution is applicable for  Baltrad+. [[BR]] || ||
+|| Non-polarimetric path attenuation correction || [wiki:RADVOL-QC_ATT IMGW] (Kate, Jan)[[BR]] [wiki:ATT_NP_FMI FMI] (Annakaisa, Timo 0.5 wm) || +++ || 1(FMI 1) [[BR]] || 1(FMI 1) [[BR]] || IMGW (Kate) [[BR]] FMI (Timo 1 wm) [[BR]] || IMGW: iterative algorithm - ready, integrated with RAVE. FMI contribution is not needed as it repeats the IMGW solution.[[BR]] || ||
+|| [wiki:Networked-VPR-correction Networked VPR correction] || FMI (Joonas 0.5wm, Jarmo 0.5wm), MET.NO || +++ || 1(FMI) || 4 || met.no (Risto) FMI (Harri&Joonas 2 wm) || _"Heikki's" program must be recoded. FMI/met.no work must be harmonized._ [[BR]] || ||
+|| Overhanging precipitation || FMI (Jarmo) || +++ || 3 || 4 || Tuomo/Joonas || Requires R&D before implementation, ~1 yr || ||
+|| Separation of convective and stratiform precipitation || [wiki:CONV_FMI FMI] (Harri, Markus, Joonas), SMHI, MET.NO, [wiki:CONV IMGW] (Anna, Jan) || +++ || 3 || 4 || IMGW (Anna, Kate, Jan) || IMGW: fuzzy logic with multi-source input data; research version ready || ||
+|| Gauge-adjusted QPE || FMI (Jarmo 0.5 wm, Timo, 2 wm), SMHI, MET.NO, [wiki:ADJUSTMENT IMGW] (Anna, Kate, Jan) || +++ [[BR]] || 2 || 4 || Daniel, [[BR]] FMI (Timo 5 wm), IMGW (Kate, Anna) || FMI contribution depends heavily on product generation framework (ongoing research)[[BR]] IMGW: using conditional merging (ongoing research).[[BR]]SMHI: algorithm will be ready by the end of 2013 || [[BR]] ||
+|| Definition of quality indicators for the purposes of BALTRAD+ || || +++ || || 4 || TBD || Requires new BBW (Baltrad Beastly Week) || ||
+|| [wiki:COMP_QUAL Quality based 3D-compositing applying precomputed quality indicators as input] || FMI (Markus 2 wm), SMHI, MET.NO, IMGW || +++ || 2 || 4? || Daniel~~~~, Anders || First case: Total attenuation and residual clutter. Simple methods will be proposed by Markus. || ||
+|| [wiki:optimal-order-of-quality-processing-steps Optimal order of quality processing steps] || FMI (Jarmo 0.5, Markus 0.5), SMHI, MET.NO, IMGW || +++ || 2 || Not applicable || Daniel,~~~~ Anders, Jan || First guess order available from Helsinki Workshop in Feb 2012. Implemented. || ||
+|| Intra-volume advection || || + || || Not realized in BALTRAD+ || || "Time stamp correction" within single volume || ||
+|| [wiki:Anomaly-detection-applying-non-polarimetric-pattern-recognition Anomaly detection applying non-polarimetric pattern recognition] || MET.NO, FMI (Markus 0.5) || ++ || 1 || 1 || Risto || FMI part involves joint planning of the methods and of quality metrics. || ||
+|| Removal of external antenna  echoes (spikes) and quality characterization || [wiki:RADVOL-QC_SPIKE IMGW] (Kate, Jan) || ++ || || || Kate || Ready, integrated with RAVE || ||
+|| Removal of non-meteorological echoes and quality characterization || [wiki:RADVOL-QC_NMET IMGW](Kate, Jan) || ++ || || || Kate || Ready, to be integrated with RAVE || ||
+|| Removal of measurement noise (specks) and quality characterization || [wiki:RADVOL-QC_SPECK IMGW] (Kate, Jan) || ++ || || || Kate || Ready, integrated with RAVE || ||
+|| Quality characterization due to distance to radar related effects || [wiki:RADVOL-QC_BROAD IMGW](Kate, Jan) || ++ || || || Kate || Ready, integrated with RAVE || ||
+|| Non-polarimetric diagnosis of bird migration || SMHI, FMI (Jarmo 0.5 wm) || ++ || 2 || Not realized in BALTRAD+ || Günther || KNMI-algorithm? Contingent on algorithm  recipe and WRWP implementation.Can only diagnose nocturnal migration in  vertical layers, not in measurement bins. || ||
+|| Polarimetric diagnosis of *non-meteorological targets* (was: bird migration) || FMI (Jarmo 1 wm, Teemu 1 wm, Seppo 1 wm) || ++ || 2 || Not realized in BALTRAD+ || FMI (Teemu ?) || Optional (ongoing research) || ||
+|| Doppler filter effect (snake) detection for dBZ || ~~FMI~~ || ++ || || || TBD || Probably not needed in near future as adaptive clutter filtering will remove snakes. || ||
+|| Beam blockage correction applying DEM || SMHI, MET.NO, [wiki:RADVOL-QC_BLOCK IMGW] (Kate, Jan) || + || || || IMGW (Kate) || IMGW: ready, to be integrated with BEAMB || ||
+|| Diagnosis of maximum detection range || FMI (Harri) || + || || || || Done. *Action: *HH will provide documentation. || ||
+|| Wet radome attenuation || FMI (Mikko 2wm) || ++ || 2 || Not realized in BALTRAD+ || TBD || FMI requires R&D before implementation (Mikko and Tuomo). *Action:* MC will provide documentation. || ||
+|| Dealiased radial winds || SMHI || ++ || 1 || 3 || Günther || Done. *Action: *GH will provide documentation. || ||
+|| Wind profile quality || SMHI || ++ || 1 || 3 || Günther || Done. *Action: *GH will provide documentation. || ||
+|| Advection and fall speed correction for surface precipitation || FMI || ++ || || Not realized in BALTRAD+ || ~~~~ || Requires 4D model data, too heavy calculations. *Action: *JK will provide documentation. || ||
+|| Interpolation of subsequent 2D dBZ fields || FMI, SMHI, MET.NO, IMGW || + [[BR]] || || || TBD || Smoothing the "stroboscope" effect with Hannesen method". *Action: *Clarify what is meant with this item. || ||
+|| [wiki:RZ_DYN_OBS Dynamic R(Z) using SP data (FMI)] || FMI, SMHI, MET.NO, IMGW || ++ || || || Used in FMI || Includes surface observation data. || ||
+|| Dynamic R(Z) using DP data || || || || || || || Includes other source data ||
+|| Downscaling of ground precipitation || [wiki:DOWNSCALE IMGW] (Anna, Kate, Jan) || TBD || || Not realized in BALTRAD+ || IMGW (Anna, Kate) || Recipe ready. || ||
+|| Total quality index (QI) for scans/volumes || [wiki:QIT IMGW] (Kate) || TBD || || || IMGW (Kate) || IMGW: ready, to be integrated with RAVE. || ||
+|| PPI product generation using quality information || [wiki:Product2D_PPI IMGW] (Kate, Jan) || TBD || || || IMGW (Anna, Kate) || IMGW: ready, to be integrated with RAVE. || ||
+|| Maximum Reflectivity (MAX) product generation (based on PPI algorithm) || [wiki:Product2D_MAX IMGW] (Kate, Jan) || TBD || || || IMGW (Anna, Kate) || IMGW: ready, to be integrated with RAVE. || ||
+|| VIL product generation (based on PPI algorithm) || [wiki:Product2D_VIL IMGW] (Kate, Jan) || TBD || || || IMGW (Anna, Kate) || IMGW:  ready, to be integrated with RAVE. || ||
+|| Echo Top product generation (based on PPI algorithm) || [wiki:Product2D_ET IMGW] (Kate, Jan) || TBD || || || IMGW (Anna, Kate) || IMGW: ready, to be integrated with RAVE. || ||
