@@ -3,7 +3,7 @@
 Welcome to this "cookbook", where "recipes" are collected. This is intended to constitute a documentation reference collection of data processing algorithms. Each algorithm recipe is documented in a standardized way, enabling them to be coded as part of the BALTRAD code base or an external system. The important thing is that the community can focus this effort in a harmonized way.
 
 # Documentation
-[How to write a cookbook recipe](cookbook/cookbook_HOWTO)
+[How to write a cookbook recipe](cookbook_HOWTO)
 
 [Cookbook roadmap](http://git.baltrad.eu/trac/wiki/cookbook/roadmap)
 
@@ -15,7 +15,7 @@ Welcome to this "cookbook", where "recipes" are collected. This is intended to c
 Add the new recipe under an appropriate category
 
 ## Anomalies
-[Removal of geometrically-shaped non-meteorological echoes and quality characterization – RADVOL-QC: SPIKE](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_SPIKE)
+[Removal of geometrically-shaped non-meteorological echoes and quality characterization – RADVOL-QC: SPIKE](cookbook_RADVOL_SPIKE)
 
 [Removal of non-meteorological echoes and quality characterization – RADVOL-QC: NMET](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_NMET)
 

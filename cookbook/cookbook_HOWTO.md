@@ -24,8 +24,8 @@ Equations can be added using LaTeX notation through online tools
 	
 Tables can be created using the WYSIWYG functionality, e.g.
 
-|| _Column 1'' || ''Col 2'' || ''Col 3_ ||
-|| Content 1 || Content 2 || Content 3 ||
+| _Column 1'' | ''Col 2'' | ''Col 3_ |
+| Content 1 | Content 2 | Content 3 |
 
 # 6. Output.
 ## a) Data type using ODIM notation where possible, e.g. DBZH
