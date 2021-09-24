@@ -52,11 +52,17 @@ If the algorithm is run by means of BALTRAD toolbox then all the algorirthm para
 For “wide” spikes a subalgorithm based on analysis of spatial structure of radar echo is employed. It is run if fraction of echo cover is smaller than SPIKE_ACovFrac. The variability of the echo across and along radar beam is examined using locally determined reflectivity variances, so a given echo is classified as potential spike if the first variance is high whereas the latter is low:
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{if}"/>
+
 <img src="https://render.githubusercontent.com/render/math?math=(var_{across}(Z(\alpha,l)[\text{dBZ}])> \text{SPIKE}\_\text{AVarAzim})"/>
+
 <img src="https://render.githubusercontent.com/render/math?math=\text{and}"/>
+
 <img src="https://render.githubusercontent.com/render/math?math=(var_{along}(Z(\alpha,l)[\text{mm6/m3}]) < \text{SPIKE}\_\text{AVarBeam})"/>
+
 <img src="https://render.githubusercontent.com/render/math?math=\text{then}"/>
+
 <img src="https://render.githubusercontent.com/render/math?math=\text{there is potential spike in the gate }(\alpha,l)"/>
+
 <!--	
 	#!latex 
 	$ \text{if}  $
