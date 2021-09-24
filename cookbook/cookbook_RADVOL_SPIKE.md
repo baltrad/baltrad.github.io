@@ -78,13 +78,22 @@ For “wide” spikes a subalgorithm based on analysis of spatial structure of r
 	$ \text{there is potential spike in the gate }(\alpha,l)  $
 -->
 	
- where _var,,across,,'' is the variance for a given gate calculated across radar beam at distance up to ±SPIKE_AAzim (°) in azimuth; ''var,,along,,'' is the variance in a given gate calculated along radar beam at distance up to ±SPIKE_ABeam (km); ''Z_ is the radar reflectivity expressed in dBZ or mm^6^/m^3^. If fraction of gates along radar beam classified as burdened with potential spike is higher than SPIKE_AFrac then presence of A-type spike in the gates is confirmed.
+where _var,,across,,'' is the variance for a given gate calculated across radar beam at distance up to ±SPIKE_AAzim (°) in azimuth; ''var,,along,,'' is the variance in a given gate calculated along radar beam at distance up to ±SPIKE_ABeam (km); ''Z_ is the radar reflectivity expressed in dBZ or mm^6^/m^3^. If fraction of gates along radar beam classified as burdened with potential spike is higher than SPIKE_AFrac then presence of A-type spike in the gates is confirmed.
 
 *“Narrow”  spike removal*
 
 The second subalgorithm is employed to recognize and remove “narrow” spikes, i.e. not wider than ±SPIKE_BAzim (°) in azimuth. In the first step gates with potential “narrow” spikes are detected. This subalgorithm is applied to each gate (_α'', ''l'') with echo detected, that means ''Z''(''α'', ''l'') > –32 dBZ (which is the lowest reflectivity measured by radar). For these gates reflectivity at neighbouring beams of azimuth ''α''±''d'' (where ''d'' = SPIKE_BAzim (°)) in the same distance to radar ''l_ are checked:
 
-	
+<img src="https://render.githubusercontent.com/render/math?math=\text{if}"/><br/>
+<img src="https://render.githubusercontent.com/render/math?math=(((Z(\alpha -d,l)=-32 \text{dBZ}) \text{ and } (Z(\alpha,l)- Z(\alpha -d,l)>\text{SPIKE}\_\text{BDiff} ))"/><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{or } (\text{spike A in gate }(\alpha -d,l)) \text{ or } (\text{potential spike B in gate } (\alpha -d,l)))"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{and }"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=(((Z(\alpha+d,l)=-32 \text{dBZ}) \text{ and } (Z(\alpha,l)- Z(\alpha +d,l)>\text{SPIKE}\_\text{BDiff} ))"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{or } (\text{spike A in gate }(\alpha +d,l)) \text{ or } (\text{potential spike B in gate } (\alpha +d,l)))"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{then}"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{there is potential spike B in the gate }(\alpha,l)"><br/>
+
+<!--	
 	#!latex 
 	$ \text{if} $
 	
@@ -101,7 +110,7 @@ The second subalgorithm is employed to recognize and remove “narrow” spikes,
 	$ \text{then}  $
 	
 	$ \text{there is potential spike B in the gate }(\alpha,l)  $
-	
+-->	
 The procedure is repeated for _d_ = SPIKE_BAzim - 1 downto 1. Next number of gates with potential spike B along given radar beam is computed and if their fraction is higher than SPIKE_BFrac then then presence of B-type spike in the gates is confirmed.
 
 Finally, all the gates with spikes of A- or B-type are replaced by reflectivities interpolated from neighbouring beams.
