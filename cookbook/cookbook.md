@@ -45,7 +45,7 @@ Add the new recipe under an appropriate category
 ## Path attenuation correction
 [Polarimetric Rain Attenuation Correction : rainATTENcorrect](cookbook_POL_RAIN_ATT_CORR)
 
-[Correction and quality characterization for attenuation in rain – RADVOL-QC: ATT](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_ATT)
+[Correction and quality characterization for attenuation in rain – RADVOL-QC: ATT](cookbook_RADVOL_ATT)
 
 [Non-polarimetric integrated path attenuation estimate for melting layer at C-band: BBAND_ATTN_DIAG_SPOL_fmi](http://git.baltrad.eu/trac/wiki/cookbook/BBAND_PIA_EST_NP:)
 
