@@ -43,12 +43,12 @@ The computational procedure involves the following steps for module A:
 1. from the radar volume file read in the following radar parameters: reflectivity Z<sub>HH</sub>, differential reflectivity Z<sub>DR</sub>, cross correlation σ<sub>HV</sub>, differential phase Ф<sub>DP</sub>, radial velocity V<sub>r</sub> and spectral width W
 
 2. by changing the default settings in the metadata file, choose whether to undertake the following operations:\
-  a. smooth Z<sub>DR</sub> and σ<sub>HV</sub> parameters, by averaging over N number of range gates,
-  b. correct Z<sub>DR</sub> and σ<sub>HV</sub> at low signal-to-noise (SNR) ratio values,
-  c. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for radome effects,
-  d. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for potential biases,
-  e. compute the specific differential phase, K<sub>DP</sub>, as described in section 4 above,
-  f. correct both Z<sub>HH</sub> and Z<sub>DR</sub> for rain attenuation as described in section 5 above.
+  a. smooth Z<sub>DR</sub> and σ<sub>HV</sub> parameters, by averaging over N number of range gates,\
+  b. correct Z<sub>DR</sub> and σ<sub>HV</sub> at low signal-to-noise (SNR) ratio values,\
+  c. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for radome effects,\
+  d. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for potential biases,\
+  e. compute the specific differential phase, K<sub>DP</sub>, as described in section 4 above,\
+  f. correct both Z<sub>HH</sub> and Z<sub>DR</sub> for rain attenuation as described in section 5 above.\
 
 3. now compute the following radar parameters in their appropriate units:
 a. Z,,HH,, (unit dBZ) and its texture parameter, Tex(Z,,HH,,),
