@@ -40,7 +40,7 @@ Add the new recipe under an appropriate category
 
 [Probability of beam overshoot / detection range analysis : BEAM_OVERSHOOT](cookbook_BEAM_OVERSHOOT)
 ## Classifiers
-[Baltrad Hydrometeor Classifier : BALTRAD-HMC](http://git.baltrad.eu/trac/wiki/cookbook/BALTRAD-HMC)
+[Baltrad Hydrometeor Classifier : BALTRAD-HMC](cookbook_BALTRAD_HMC)
 
 ## Path attenuation correction
 [Polarimetric Rain Attenuation Correction : rainATTENcorrect](http://git.baltrad.eu/trac/wiki/cookbook/PolRainAttCorr:)
