@@ -29,7 +29,7 @@ Add the new recipe under an appropriate category
 
 ## Biological Targets
 ## Solar monitoring
-[Determination and analysis of solar signatures in volume data](http://git.baltrad.eu/trac/wiki/cookbook/SOLARANALYSIS)
+[Determination and analysis of solar signatures in volume data](cookbook_SOLARANALYSIS)
 
 ## Hail
 ## Volcanic Ash Plumes
