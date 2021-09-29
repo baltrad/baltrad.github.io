@@ -109,7 +109,7 @@ _Fig. 4 shows radar image on the left ( Z<sub>HH</sub> original) and its corresp
 
 In the level 2 classification, the echoes that are classified as precipitation in level 1 are further subclassified into different precipitation classes mentioned above. In this case the heights of the melting layer computed by the local NWP model and/or estimated from the radar parameters [#point2 (see section 3)] are used to strengthen the classification between the different classes of rain and snow. In the current version of the level-2 classification only the parameters Z<sub>HH</sub>, Z<sub>DR</sub>, K<sub>DP</sub>, and σ<sub>HV</sub> are used. In particular, in this case score S<sub>j</sub> is given by the relation
 
-<img src="https://render.githubusercontent.com/render/math?math=S_j = \frac{ P^j_{Zhh} \,\cdot \, P^j_{height}[w_{Zdr} \,\cdot \,P^j_{Zdr} + w_{\rho hv}\,\cdot \,P^j_{\rho{hv}} + w_{Kdp}\,\cdot \,P^j_{Kdp}]}{w^j_{Zdr} + w^j_{\rho_{hv}} + w^j_{Kdp}}">
+<img src="https://render.githubusercontent.com/render/math?math=S_j = \frac{ P^j_{Zhh} \,\cdot \, P^j_{height}[w_{Zdr} \,\cdot \,P^j_{Zdr} + w_{\rho hv}\,\cdot \,P^j_{\rho{hv}} + w_{Kdp}\,\cdot \,P^j_{Kdp}]}{w^j_{Zdr} + w^j_{\rho_{hv}} + w^j_{Kdp}}" />
 
 <!--	
 	#!latex
