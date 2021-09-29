@@ -143,6 +143,7 @@ For “high” spike removal:
 ![RADVOL SPIKE narrow](/images/RADVOL_SPIKE_high_spike.png)
 
 <!--	
+
 	#!graphviz
 	digraph S {
 	node [shape=record];
@@ -211,8 +212,7 @@ For “high” spike removal:
 	"Z > -32 dBZ"->"no high spike"[label=no]
 	"high spike"->"removal of the spike"
 	}
-	
-}}}
+-->	
 
 # *6. Output*
 ## a) Data type using ODIM notation where possible, e.g. DBZH
