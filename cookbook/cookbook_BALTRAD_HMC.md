@@ -74,8 +74,8 @@ The computational procedure involves the following steps for module B:
   c. classify the bin by choosing the predefined hydrometeor class with the highest score\
   
 5. for level-2 hydrometeor classification\
-  a. compute the heights of the melting layers using:\
-    i. the radar volume data, and\
+  a. compute the heights of the melting layers using:\\
+    i. the radar volume data, and\\
     ii. from Numerical Weather Prediction (NWP) models\
   b. get the “scores “ of each of the parameter\
   c. using fuzzy logic rules compute the final score for each predefined classes (see section 2)\
