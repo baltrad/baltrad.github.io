@@ -13,7 +13,7 @@ Hydrometeor classification at volume level is carried out using the fuzzy logic 
 -->	
 	 
 
-where P,,i,, and W,,i,, are the value of the parameter i, and the associated weight, for the class j. The radar parameters that have been used in the classifier are: Z,,HH,,, Z,,DR,,, K,,DP,,, σ,,HV,, , plus the texture parameters, associated with Z,,HH,,, Z,,DR,,, Ф,,DP,, (Schuur et. al., 2003, Sugier et. al., 2006). In fuzzy logic the values of the P,,i,, for the different hydrometeor classes are described by the membership functions (MF) [#point1 (see section 4)].
+where P,,i,, and W,,i,, are the value of the parameter i, and the associated weight, for the class j. The radar parameters that have been used in the classifier are: Z<sub>HH</sub>, Z<sub>R</sub>, K<sub>DP</sub>, σ<sub>HV</sub> , plus the texture parameters, associated with Z<sub>HH</sub>, Z<sub>DR</sub>, Ф<sub>DP</sub> (Schuur et. al., 2003, Sugier et. al., 2006). In fuzzy logic the values of the P<sub>i</sub> for the different hydrometeor classes are described by the membership functions (MF).
 
 ## *Hydrometeor classes*
 In the current version of the algorithm the following 12 hydrometeor classes have been identified:
@@ -36,19 +36,19 @@ However, internally in the BALTRAD-HMC software there are two classes each of gr
 
 The software consists of two main modules:
 A. Computation of all the radar parameters that are to be used in the fuzzy logic classifier
-B. Using fuzzy logic rules classify each bin of the radar returned echo into one of the predefined hydrometeor classes.[[BR]]
+B. Using fuzzy logic rules classify each bin of the radar returned echo into one of the predefined hydrometeor classes.
 
-The computational procedure involves the following steps for module A:[[BR]]
+The computational procedure involves the following steps for module A:
 
 1. from the radar volume file read in the following radar parameters: reflectivity Z<sub>HH</sub>, differential reflectivity Z<sub>DR</sub>, cross correlation σ<sub>HV</sub>, differential phase Ф<sub>DP</sub>, radial velocity V<sub>r</sub> and spectral width W
 
-2. by changing the default settings in the metadata file, choose whether to undertake the following operations:
-  a. smooth Z<sub>DR</sub> and σ,,HV,, parameters, by averaging over N number of range gates,
-  b. correct Z,,DR,, and σ,,HV,, at low signal-to-noise (SNR) ratio values,
-  c. correct Z,,DR,, and Ф,,DP,, for radome effects,
-  d. correct Z,,DR,, and Ф,,DP,, for potential biases,
-  e. compute the specific differential phase, K,,DP,,, as described in section 4 above,
-  f. correct both Z,,HH,, and Z,,DR,, for rain attenuation as described in section 5 above.[[BR]]
+2. by changing the default settings in the metadata file, choose whether to undertake the following operations:\
+  a. smooth Z<sub>DR</sub> and σ<sub>HV</sub> parameters, by averaging over N number of range gates,
+  b. correct Z<sub>DR</sub> and σ<sub>HV</sub> at low signal-to-noise (SNR) ratio values,
+  c. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for radome effects,
+  d. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for potential biases,
+  e. compute the specific differential phase, K<sub>DP</sub>, as described in section 4 above,
+  f. correct both Z<sub>HH</sub> and Z<sub>DR</sub> for rain attenuation as described in section 5 above.
 
 3. now compute the following radar parameters in their appropriate units:
 a. Z,,HH,, (unit dBZ) and its texture parameter, Tex(Z,,HH,,),
