@@ -65,7 +65,7 @@ Add the new recipe under an appropriate category
 
 [Dynamical downscaling of ground precipitation rate – DOWNSCALE](cookbook_DOWNSCALE)
 
-[Networked VPR correction](http://git.baltrad.eu/trac/wiki/cookbook/Networked-VPR-correction)
+[Networked VPR correction](cookbook_NETWORKED_VPR_CORRECTION)
 
 [Dynamic R(Z) using single-polarisation data and ground observations – RZ_DYN_OBS](http://git.baltrad.eu/trac/wiki/cookbook/RZ_DYN_OBS)
 
