@@ -114,7 +114,7 @@ Finally, all the gates with spikes of A- or B-type are replaced by reflectivitie
 
 Quality index _QI,,SPIKE,,_ for the whole radar beam in which spike is detected equals:
 
-<img src="https://render.githubusercontent.com/render/math?math=QI_{SPIKE} = \begin{cases}\text{SPIKE}\_\text{QI}  & \textrm{for gate with spike echo\ } \\1                        & \textrm{for gate without spike echo \ }\end{cases}">
+<img src="https://render.githubusercontent.com/render/math?math=QI_{SPIKE}=\begin{cases}\text{SPIKE}\_\text{QI} \qquad \text{for gate with spike echo}\\1\qquad\qquad\qquad\text{for gate without spike echo} \end{cases}">
 
 <!--	
 	#!latex 
@@ -123,6 +123,7 @@ Quality index _QI,,SPIKE,,_ for the whole radar beam in which spike is detected 
 	1                        & \textrm{for gate without spike echo \ } 
 	\end{cases} $
 -->	
+
 *Diagram*
 
 Generally:
