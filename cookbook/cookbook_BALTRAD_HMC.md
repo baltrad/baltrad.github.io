@@ -84,13 +84,14 @@ The computational procedure involves the following steps for module B:
 # *4. Theoretical background*
 In fuzzy logic the values of the P,,i,,, in equation (2), for the different hydrometeor classes are described by the membership functions. In the current version the latter are expressed as Betafunctions of the type shown in fig. 1 with the 3 parameters: a, ß and γ indicating the centre, halfwidth at inflection point and the slope of the curve (Lim et. al., 2005).
 
-![Beta membership function](/images/beta_function.png)
+![Beta membership function](/images/beta_function.png)\
 _Fig. 1 Beta membership function_
 
 As a way of example, fig. 2 shows the membership functions for the parameter Z,,HH,, for the different classes of rain.
 
 
 ![Membership functions](/images/membershift_functions.png)
+
 _Fig. 2 Membership functions for Z<sub>HH</sub> for different categories of rain._
 
 Similar membership functions exits for other hydrometeor classes for Z<sub>HH</sub> and for all the other parameters used in the classification.
