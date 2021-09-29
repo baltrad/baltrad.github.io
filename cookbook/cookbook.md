@@ -47,7 +47,7 @@ Add the new recipe under an appropriate category
 
 [Correction and quality characterization for attenuation in rain – RADVOL-QC: ATT](cookbook_RADVOL_ATT)
 
-[Non-polarimetric integrated path attenuation estimate for melting layer at C-band: BBAND_ATTN_DIAG_SPOL_fmi](http://git.baltrad.eu/trac/wiki/cookbook/BBAND_PIA_EST_NP:)
+[Non-polarimetric integrated path attenuation estimate for melting layer at C-band: BBAND_ATTN_DIAG_SPOL_fmi](cookbook_BBAND_PIA_EST_NP)
 
 ## Quality characterization
 [Calibration difference of two radars - CALID](http://git.baltrad.eu/trac/wiki/cookbook/CALID)
