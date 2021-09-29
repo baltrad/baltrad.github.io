@@ -32,6 +32,7 @@ Topography maps from GTOPO30.
 A geometrical approach is applied to calculate the degree of the beam blockage. 
 
 Set of the algorithm parameters:
+
 | Description | Denotation | Default value |
 | Maximum of elevation angle to calculate beam blockage (deg) | BLOCK_MaxElev | 5.0 |
 | QIGC value for ground clutter | BLOCK_GCQI | 0.5 |
