@@ -30,7 +30,7 @@ In the algorithm two stages of spike removal are introduced: for “wide” (sub
 
 *Set of the algorithm parameters*
 
-| _Description'' | ''Denotation'' | ''Default value_ |
+| Description | Denotation | Default value |
 | _QI,,SPIKE,,_ value for external interference signals | SPIKE_QI | 0.5 |
 | _QI,,SPIKE,,_ value for uncorrected external interference signals | SPIKE_QIUn | 0.3 |
 | Maximum fraction of echo cover to apply the correction (algorithm A) | SPIKE_ACovFrac | 0.9 |
@@ -127,7 +127,9 @@ Quality index _QI,,SPIKE,,_ for the whole radar beam in which spike is detected 
 
 Generally:
 
-	
+![Example diagram](https://g.gravizo.com/svg?digraph S {node [shape=record];rankdir="TB";size="5,4";fontname="Arial";"Detection of wide (A-type) spikes"->"Detection of narrow (B-type) spikes"	"Detection of narrow (B-type) spikes"->"Interpolation or removal of the spikes"})
+
+<!--	
 	#!graphviz
 	digraph S {
 	node [shape=record];

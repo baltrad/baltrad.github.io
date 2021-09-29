@@ -24,7 +24,7 @@ Equations can be added using LaTeX notation through online tools
 	
 Tables can be created using the WYSIWYG functionality, e.g.
 
-| _Column 1'' | ''Col 2'' | ''Col 3_ |
+| Column 1 | Col 2 | Col 3 |
 | Content 1 | Content 2 | Content 3 |
 
 # 6. Output.
