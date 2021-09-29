@@ -34,7 +34,7 @@ Quality index _QI'' is a unitless quantity with values in the range from 0 to 1,
 Set of the algorithm parameters:
 
 | Description | Denotation | Available options | Default value |
-| List of _QI_ fields | QIFields | Example: “pl.imgw.radvoqc.att, pl.imgw.radvolqc.spike”;</br>NULL means all available QI fields | NULL (all available) |
+| List of _QI_ fields | QIFields | Example: “pl.imgw.radvoqc.att, pl.imgw.radvolqc.spike” NULL means all available QI fields | NULL (all available) |
 | Methods of combination of particular _QI''s into total ''QI_ | Method | multi / add / min | multi |
 | Overwrite if total _QI_ already exists | Overwrite | 0 (no) / 1 (yes) | 0 |
 
@@ -53,8 +53,7 @@ The total _QI_ is generated:
 If there are no available particular _QI'' fields then total ''QI'' is not generated. If a given pixel is marked as "nodata" value at least in one of ''QI'' fields then "nodata" is assigned to total ''QI_ as well.
 
 The following methods for the _QI_s combination are to select:
-* *multi* (multiplicative) 
-
+* *multi* (multiplicative) \
 <img src="https://render.githubusercontent.com/render/math?math=QI = \Pi_{i=1}^{n}QI_{i}" />
  	
 <!-- 	
@@ -62,8 +61,7 @@ The following methods for the _QI_s combination are to select:
 	$ QI = \Pi_{i=1}^{n}QI_{i} $
 -->	
 	 
-* *add* (additive) 
-
+* *add* (additive)\
 <img src="https://render.githubusercontent.com/render/math?math=QI = \frac{1}{n} \sum_{i=1}^{n}QI_{i}" />
  	
 <!--
@@ -71,8 +69,7 @@ The following methods for the _QI_s combination are to select:
 	$ QI = \frac{1}{n} \sum_{i=1}^{n}QI_{i}    $
 -->	
 	
-* *min* (minimum value) 
-
+* *min* (minimum value)\
 <img src="https://render.githubusercontent.com/render/math?math=QI = \text{min}(QI_{i})" />
 
 <!-- 	
