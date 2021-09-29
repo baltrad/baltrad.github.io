@@ -90,6 +90,6 @@ _Fig. 3. Effectiveness of downscaling methods: dynamic one, simple decomposition
 
 In Fig. 4 one example of the performance of dynamic method is shown. The rainfall field with coarse 16-km spatial resolution was downscaled to 1-km resolution. As a reference the initial 1-km field is presented. Basing on statistical results, it can be concluded that rainfall pattern was reconstructed successfully. The algorithm reflected wet and dry grids quite well and the spatial variability of rainfall was correctly reproduced.
 
-![Fig 4 DOWNSCALING](/images/Fig_4_DOWNSCALING.gif)\
+![Fig 4 DOWNSCALING](/images/Fig_4_DOWNSCALING.jpg)\
 _Fig. 4. Example of precipitation downscaling from 16 to 1-km resolution using dynamic method: (a) map of 16-km resolution, (b) downscaled to 1 km, and (c) initial 1-km map (29 August 2006, 06 UTC)._ 
 
