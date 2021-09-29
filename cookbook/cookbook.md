@@ -21,7 +21,7 @@ Add the new recipe under an appropriate category
 
 [Removal of non-meteorological echoes and quality characterization – RADVOL-QC: NMET](cookbook_RADVOL_NMET)
 
-[Removal of measurement noise and quality characterization – RADVOL-QC: SPECK](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_SPECK)
+[Removal of measurement noise and quality characterization – RADVOL-QC: SPECK](cookbook_RADVOL_SPECK)
 
 [Hit-accumulation clutter filter: HAC](http://git.baltrad.eu/trac/wiki/cookbook/HAC)
 
