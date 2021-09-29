@@ -40,16 +40,15 @@ B. Using fuzzy logic rules classify each bin of the radar returned echo into one
 
 The computational procedure involves the following steps for module A:[[BR]]
 
-1. from the radar volume file read in the following radar parameters: reflectivity Z,,HH,,, differential reflectivity Z,,DR,,, cross correlation σ,,HV,,, differential phase Ф,,DP,,, radial velocity V,,r,, and spectral width W[[BR]]
+1. from the radar volume file read in the following radar parameters: reflectivity Z<sub>HH</sub>, differential reflectivity Z<sub>DR</sub>, cross correlation σ<sub>HV</sub>, differential phase Ф<sub>DP</sub>, radial velocity V<sub>r</sub> and spectral width W
 
-2. by changing the default settings in the metadata file, choose whether to undertake the following operations:[[BR]]
-
-a. smooth Z,,DR,, and σ,,HV,, parameters, by averaging over N number of range gates,
-b. correct Z,,DR,, and σ,,HV,, at low signal-to-noise (SNR) ratio values,
-c. correct Z,,DR,, and Ф,,DP,, for radome effects,
-d. correct Z,,DR,, and Ф,,DP,, for potential biases,
-e. compute the specific differential phase, K,,DP,,, as described in section 4 above,
-f. correct both Z,,HH,, and Z,,DR,, for rain attenuation as described in section 5 above.[[BR]]
+2. by changing the default settings in the metadata file, choose whether to undertake the following operations:
+  a. smooth Z<sub>DR</sub> and σ,,HV,, parameters, by averaging over N number of range gates,
+  b. correct Z,,DR,, and σ,,HV,, at low signal-to-noise (SNR) ratio values,
+  c. correct Z,,DR,, and Ф,,DP,, for radome effects,
+  d. correct Z,,DR,, and Ф,,DP,, for potential biases,
+  e. compute the specific differential phase, K,,DP,,, as described in section 4 above,
+  f. correct both Z,,HH,, and Z,,DR,, for rain attenuation as described in section 5 above.[[BR]]
 
 3. now compute the following radar parameters in their appropriate units:
 a. Z,,HH,, (unit dBZ) and its texture parameter, Tex(Z,,HH,,),
