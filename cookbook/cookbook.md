@@ -38,7 +38,7 @@ Add the new recipe under an appropriate category
 
 [Analysis and correction of beam blockage due to topography: BEAMB](cookbook_BEAMB)
 
-[Probability of beam overshoot / detection range analysis : BEAM_OVERSHOOT](http://git.baltrad.eu/trac/wiki/cookbook/BEAM_OVERSHOOT)
+[Probability of beam overshoot / detection range analysis : BEAM_OVERSHOOT](cookbook_BEAM_OVERSHOOT)
 ## Classifiers
 [Baltrad Hydrometeor Classifier : BALTRAD-HMC](http://git.baltrad.eu/trac/wiki/cookbook/BALTRAD-HMC)
 
