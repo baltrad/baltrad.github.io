@@ -90,24 +90,21 @@ _Fig. 1 Beta membership function_
 As a way of example, fig. 2 shows the membership functions for the parameter Z,,HH,, for the different classes of rain.
 
 
-![Membership functions](/images/membershift_functions.png)
-
+![Membership functions](/images/membershift_functions.png)\
 _Fig. 2 Membership functions for Z<sub>HH</sub> for different categories of rain._
 
 Similar membership functions exits for other hydrometeor classes for Z<sub>HH</sub> and for all the other parameters used in the classification.
 
 There has been much interest from international colleagues in the radar echo class 3 mentioned in section 2 above, because as far it is know, no hydrometeor classifier has included a class for the external emitters before (Gill et. al., 2012). For this reason the membership functions of Z,,HH,, Z,,DR,, and σ,,HV,, for the different types of external emitters included in the classifier are given below(fig. 3). Also note radar echoes from the sun are also a sub-class of external emitters. Membership function of the sun plus those of external emitters for the parameter Z,,HH,, can be seen in the bottom left part of fig. 3.
 
-![Membership functions](/images/membershift_functions2.png)
-
+![Membership functions](/images/membershift_functions2.png)\
 _Fig. 3 Membership functions of Z<sub>HH</sub>, Z<sub>DR</sub> and rho<sub>HV</sub> for the different types of external emitters included in the classifier. Top left MF of a single external emitter of Z<sub>DR</sub>. Top right MF of all 9 external emitters of Z<sub>DR</sub> . Bottom left of all 9 external emitters and of sun of Z<sub>HH</sub>. Bottom right MF of all 9 external emitters of σ<sub>HV</sub>_
 
 ## *Examples of output from the hydrometeor classifier*
 
 The current version of the algorithm does the so-called level 1 and level 2 classifications. In the level 1 classification a radar echo is classified into one of four simple classes: precipitation, clutter, clean air echoes, and external emitters. Figure 4 shows an example of the output.
 
-![Radar image](/images/lev1_class_1.png)
-
+![Radar image](/images/lev1_class_1.png)\
 _Fig. 4 shows radar image on the left ( Z<sub>HH</sub> original) and its corresponding level 1 hydrometeor classification into four classes: external emitters (EE), clean air echoes (CAE), clutter and precipitation (prec), colour code: yellow, blue, purple and green, respectively._
 
 In the level 2 classification, the echoes that are classified as precipitation in level 1 are further subclassified into different precipitation classes mentioned above. In this case the heights of the melting layer computed by the local NWP model and/or estimated from the radar parameters [#point2 (see section 3)] are used to strengthen the classification between the different classes of rain and snow. In the current version of the level-2 classification only the parameters Z<sub>HH</sub>, Z<sub>DR</sub>, K<sub>DP</sub>, and σ<sub>HV</sub> are used. In particular, in this case score S<sub>j</sub> is given by the relation
@@ -121,15 +118,13 @@ In the level 2 classification, the echoes that are classified as precipitation i
 
 Fig. 5 shows an example of the level 2 classification. Note that the radar data used to illustrate the classifications results are the same in figures 4 and 5.
 
-![Radar image](/images/lev2_class_1.png)
-
+![Radar image](/images/lev2_class_1.png)\
 _Fig. 5 shows radar image on the left (original Z<sub>HH</sub> ) and its corresponding level 2 hydrometeor classifications into eleven classes.
 
 
 In addition to the above level 1 and 2 classifications, the algorithm can make use of the above classification output to remove the non- meteorological echoes in the original radar reflectivity product, Z<sub>HH</sub>, shown on the left in each of the figures 4 and 5. This is illustrated in figure 6 below. Concerning the latter product, it was the first product that was requested for routine operational use by the DMI end users, namely its meteorologists.
 
-![Radar product](/images/cleaned_1.png)
-
+![Radar product](/images/cleaned_1.png)\
 _Fig. 6 shows the original radar product on the left and corresponding “cleaned” version on the right which has non-meteorological echoes removed._
 
 
