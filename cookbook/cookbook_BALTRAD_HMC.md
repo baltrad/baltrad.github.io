@@ -48,35 +48,38 @@ The computational procedure involves the following steps for module A:
   c. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for radome effects,\
   d. correct Z<sub>DR</sub> and Ф<sub>DP</sub> for potential biases,\
   e. compute the specific differential phase, K<sub>DP</sub>, as described in section 4 above,\
-  f. correct both Z<sub>HH</sub> and Z<sub>DR</sub> for rain attenuation as described in section 5 above.\
+  f. correct both Z<sub>HH</sub> and Z<sub>DR</sub> for rain attenuation as described in section 5 above.
 
-3. now compute the following radar parameters in their appropriate units:
-a. Z,,HH,, (unit dBZ) and its texture parameter, Tex(Z,,HH,,),
-b. Z,,DR,, (unit dB) and its texture parameter, Tex( Z,,DR,,),
-c. σ,,HV,, and its texture parameter, Tex(σ,,HV,,),
-d. Ф,,DP,, (unit deg.) and its texture parameter, Tex(Ф,,DP,,),
-e. K,,DP,, (unit deg./km) and its texture parameter, Tex(K,,DP,,),
-f. V,,r,, (unit m/s) and its texture parameter, Tex(V,,r,,),
-g. W (unit m/s) and its texture parameter, Tex(W ),
-h. signal-to-noise ratio parameter, SNR (unit dB), and
-i. the top, centre and bottom heights (unit meters) of the radar beam, HTT, HTC and HTB, respectively.[[BR]]
+3. now compute the following radar parameters in their appropriate units:\
+  a. Z<sub>HH</sub> (unit dBZ) and its texture parameter, Tex(Z<sub>HH</sub>),\
+  b. Z<sub>DR</sub> (unit dB) and its texture parameter, Tex( Z<sub>DR</sub>),\
+  c. σ<sub>HV</sub> and its texture parameter, Tex(σ<sub>HV</sub>),\
+  d. Ф<sub>DP</sub> (unit deg.) and its texture parameter, Tex(Ф<sub>DP</sub>),\
+  e. K<sub>DP</sub> (unit deg./km) and its texture parameter, Tex(K<sub>DP</sub>),\
+  f. V<sub>r</sub> (unit m/s) and its texture parameter, Tex(V<sub>r</sub>),\
+  g. W (unit m/s) and its texture parameter, Tex(W ),\
+  h. signal-to-noise ratio parameter, SNR (unit dB), and\
+  i. the top, centre and bottom heights (unit meters) of the radar beam, HTT, HTC and HTB, respectively.
 
 The computational procedure involves the following steps for module B:
 1. read in all the computed radar parameters from module A
-2. by changing the default settings in the metadata file, choose which of the above parameters are to be used for level-1 and level-2 hydrometeor classification
-3. read-in a , ß and γ indicating the centre, half- width at inflection point and the slope of the curve of the Beta functions (see fig. 1), for each radar parameter including the associated weights
-4. for level-1 hydrometeor classification, for each radar echo
-a. get the “scores “ of each of the parameter
-b. using fuzzy logic rules compute the final score for each predefined classes (precipitation, clutter, clean air echoes, and external emitters)
-c. classify the bin by choosing the predefined hydrometeor class with the highest score
-5. for level-2 hydrometeor classification
-a. compute the heights of the melting layers using:
-i. the radar volume data, and
-ii. from Numerical Weather Prediction (NWP) models
-b. get the “scores “ of each of the parameter
-c. using fuzzy logic rules compute the final score for each predefined classes (see section 2)
-d. classify the bin by choosing the predefined hydrometeor class with the highest score
 
+2. by changing the default settings in the metadata file, choose which of the above parameters are to be used for level-1 and level-2 hydrometeor classification
+
+3. read-in a , ß and γ indicating the centre, half- width at inflection point and the slope of the curve of the Beta functions (see fig. 1), for each radar parameter including the associated weights
+
+4. for level-1 hydrometeor classification, for each radar echo \
+  a. get the “scores “ of each of the parameter\
+  b. using fuzzy logic rules compute the final score for each predefined classes (precipitation, clutter, clean air echoes, and external emitters)\
+  c. classify the bin by choosing the predefined hydrometeor class with the highest score\
+  
+5. for level-2 hydrometeor classification\
+  a. compute the heights of the melting layers using:\
+    i. the radar volume data, and\
+    ii. from Numerical Weather Prediction (NWP) models\
+  b. get the “scores “ of each of the parameter\
+  c. using fuzzy logic rules compute the final score for each predefined classes (see section 2)\
+  d. classify the bin by choosing the predefined hydrometeor class with the highest score
 
 # *4. Theoretical background*
 In fuzzy logic the values of the P,,i,,, in equation (2), for the different hydrometeor classes are described by the membership functions. In the current version the latter are expressed as Betafunctions of the type shown in fig. 1 with the 3 parameters: a, ß and γ indicating the centre, halfwidth at inflection point and the slope of the curve (Lim et. al., 2005).[[BR]]
