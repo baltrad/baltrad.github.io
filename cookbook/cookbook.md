@@ -5,11 +5,13 @@ Welcome to this "cookbook", where "recipes" are collected. This is intended to c
 # Documentation
 [How to write a cookbook recipe](cookbook_HOWTO)
 
+<!--
 [Cookbook roadmap](http://git.baltrad.eu/trac/wiki/cookbook/roadmap)
 
 [Development and maintenance](http://git.baltrad.eu/trac/wiki/cookbook/dev-maint)
 
 [wiki:cookbook/meetings Meeting minutes]
+-->
 
 # Recipes
 Add the new recipe under an appropriate category
