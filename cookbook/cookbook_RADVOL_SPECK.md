@@ -31,7 +31,7 @@ Generally, the specks are isolated radar gates with or without echo.
 | Description | Denotation | Default value |
 | QI,,SPECK,, value for speck | SPECK_QI | 0.9 |
 | QI,,SPECK,, value for uncorrected speck | SPECK_QIUn | 0.5 |
-| A. Reverse speck vicinity || SPECK_AGrid | 1 |
+| A. Reverse speck vicinity | SPECK_AGrid | 1 |
 | A. Maximum of non-rainy gates | SPECK_ANum | 2 |
 | A. Number of reverse speck removal subalgorithm cycles | SPECK_AStep | 1 |
 | B. Speck vicinity | SPECK_BGrid | 1 |
