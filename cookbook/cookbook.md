@@ -57,7 +57,7 @@ Add the new recipe under an appropriate category
 [Total quality index (QI) for scans/volumes – QI_TOTAL](cookbook_QITOTAL)
 
 ## QPE
-[Precipitation accumulation - ACRR](http://git.baltrad.eu/trac/wiki/cookbook/ACRR)
+[Precipitation accumulation - ACRR](cookbook_ACRR)
 
 [Separation of convective and stratiform precipitation – CONVECTION](http://git.baltrad.eu/trac/wiki/cookbook/CONV)
 
