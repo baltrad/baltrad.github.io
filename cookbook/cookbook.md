@@ -52,7 +52,7 @@ Add the new recipe under an appropriate category
 ## Quality characterization
 [Calibration difference of two radars - CALID](cookbook_CALID)
 
-[Quality characterization due to distance to radar related effects – RADVOL-QC: BROAD](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_BROAD)
+[Quality characterization due to distance to radar related effects – RADVOL-QC: BROAD](cookbook_RADVOL_BROAD)
 
 [Total quality index (QI) for scans/volumes – QI_TOTAL](http://git.baltrad.eu/trac/wiki/cookbook/QIT)
 
