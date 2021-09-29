@@ -34,7 +34,7 @@ Add the new recipe under an appropriate category
 ## Hail
 ## Volcanic Ash Plumes
 ## Beam Blockage
-[Correction of partial and total beam blockage and quality characterization including ground clutter – RADVOL-QC: BLOCK](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_BLOCK)
+[Correction of partial and total beam blockage and quality characterization including ground clutter – RADVOL-QC: BLOCK](cookbook_RADVOL_BLOCK)
 
 [Analysis and correction of beam blockage due to topography: BEAMB](http://git.baltrad.eu/trac/wiki/cookbook/BEAMB)
 
