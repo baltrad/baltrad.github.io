@@ -50,7 +50,7 @@ Add the new recipe under an appropriate category
 [Non-polarimetric integrated path attenuation estimate for melting layer at C-band: BBAND_ATTN_DIAG_SPOL_fmi](cookbook_BBAND_PIA_EST_NP)
 
 ## Quality characterization
-[Calibration difference of two radars - CALID](http://git.baltrad.eu/trac/wiki/cookbook/CALID)
+[Calibration difference of two radars - CALID](cookbook_CALID)
 
 [Quality characterization due to distance to radar related effects – RADVOL-QC: BROAD](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_BROAD)
 
