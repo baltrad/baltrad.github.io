@@ -130,6 +130,18 @@ Generally:
 
 ![RADVOL SPIKE generally](/images/RADVOL_SPIKE_generally.png)
 
+For “wide” spike removal:
+
+![RADVOL SPIKE narrow](/images/RADVOL_SPIKE_wide_spike.png)
+
+For “narrow” spike removal:
+
+![RADVOL SPIKE narrow](/images/RADVOL_SPIKE_narrow_spike.png)
+
+For “high” spike removal:
+
+![RADVOL SPIKE narrow](/images/RADVOL_SPIKE_high_spike.png)
+
 <!--	
 	#!graphviz
 	digraph S {
@@ -140,8 +152,6 @@ Generally:
 	"Detection of wide (A-type) spikes"->"Detection of narrow (B-type) spikes"
 	"Detection of narrow (B-type) spikes"->"Interpolation or removal of the spikes"
 	}
-	
-	#!comment
 	
 	For “wide” spike removal:
 	
