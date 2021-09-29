@@ -59,7 +59,7 @@ Add the new recipe under an appropriate category
 ## QPE
 [Precipitation accumulation - ACRR](cookbook_ACRR)
 
-[Separation of convective and stratiform precipitation – CONVECTION](http://git.baltrad.eu/trac/wiki/cookbook/CONV)
+[Separation of convective and stratiform precipitation – CONVECTION](cookbook_CONV)
 
 [Combination of radar-based ground precipitation rate and raingauge network data – COMBINATION](http://git.baltrad.eu/trac/wiki/cookbook/ADJUSTMENT)
 
