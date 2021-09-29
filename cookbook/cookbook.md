@@ -17,7 +17,7 @@ Add the new recipe under an appropriate category
 ## Anomalies
 [Removal of geometrically-shaped non-meteorological echoes and quality characterization – RADVOL-QC: SPIKE](cookbook_RADVOL_SPIKE)
 
-[Removal of non-meteorological echoes and quality characterization – RADVOL-QC: NMET](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_NMET)
+[Removal of non-meteorological echoes and quality characterization – RADVOL-QC: NMET](cookbook_RADVOL_NMET)
 
 [Removal of measurement noise and quality characterization – RADVOL-QC: SPECK](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_SPECK)
 
