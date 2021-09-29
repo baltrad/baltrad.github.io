@@ -23,7 +23,7 @@ Add the new recipe under an appropriate category
 
 [Removal of measurement noise and quality characterization – RADVOL-QC: SPECK](cookbook_RADVOL_SPECK)
 
-[Hit-accumulation clutter filter: HAC](http://git.baltrad.eu/trac/wiki/cookbook/HAC)
+[Hit-accumulation clutter filter: HAC](cookbook_HAC)
 
 [Identification and removal of residual non-precipitation echoes using the Meteosat Second Generation Cloud Type product: CTFILTER](http://git.baltrad.eu/trac/wiki/cookbook/CTFILTER)
 
