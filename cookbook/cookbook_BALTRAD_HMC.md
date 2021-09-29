@@ -119,7 +119,7 @@ In the level 2 classification, the echoes that are classified as precipitation i
 Fig. 5 shows an example of the level 2 classification. Note that the radar data used to illustrate the classifications results are the same in figures 4 and 5.
 
 ![Radar image](/images/lev2_class_1.png)\
-_Fig. 5 shows radar image on the left (original Z<sub>HH</sub> ) and its corresponding level 2 hydrometeor classifications into eleven classes.
+_Fig. 5 shows radar image on the left (original Z<sub>HH</sub> ) and its corresponding level 2 hydrometeor classifications into eleven classes._
 
 
 In addition to the above level 1 and 2 classifications, the algorithm can make use of the above classification output to remove the non- meteorological echoes in the original radar reflectivity product, Z<sub>HH</sub>, shown on the left in each of the figures 4 and 5. This is illustrated in figure 6 below. Concerning the latter product, it was the first product that was requested for routine operational use by the DMI end users, namely its meteorologists.

@@ -43,7 +43,7 @@ Add the new recipe under an appropriate category
 [Baltrad Hydrometeor Classifier : BALTRAD-HMC](cookbook_BALTRAD_HMC)
 
 ## Path attenuation correction
-[Polarimetric Rain Attenuation Correction : rainATTENcorrect](http://git.baltrad.eu/trac/wiki/cookbook/PolRainAttCorr:)
+[Polarimetric Rain Attenuation Correction : rainATTENcorrect](cookbook_POL_RAIN_ATT_CORR)
 
 [Correction and quality characterization for attenuation in rain – RADVOL-QC: ATT](http://git.baltrad.eu/trac/wiki/cookbook/RADVOL-QC_ATT)
 
