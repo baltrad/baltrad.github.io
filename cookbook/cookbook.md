@@ -63,7 +63,7 @@ Add the new recipe under an appropriate category
 
 [Combination of radar-based ground precipitation rate and raingauge network data – COMBINATION](cookbook_ADJUSTMENT)
 
-[Dynamical downscaling of ground precipitation rate – DOWNSCALE](http://git.baltrad.eu/trac/wiki/cookbook/DOWNSCALE)
+[Dynamical downscaling of ground precipitation rate – DOWNSCALE](cookbook_DOWNSCALE)
 
 [Networked VPR correction](http://git.baltrad.eu/trac/wiki/cookbook/Networked-VPR-correction)
 
