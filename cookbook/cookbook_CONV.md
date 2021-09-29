@@ -124,7 +124,7 @@ _Fig. 2. Two-dimensional membership functions for ''Δ''Z (on the left) and ''Δ
 ## Quality characterization
 Map of quality index (QI) will be calculated for the output field. The QI will be determined based on comparison of _P<sub>C</sub>'' and ''P<sub>S</sub>_ - sums of membership functions for thw two classes: convective and non-convective precipitation.
 
-<img src="https://render.githubusercontent.com/render/math?math=QI = \sqrt{\frac{|P_C-P_S|}{P_C+P_S}}" />
+<img src="https://render.githubusercontent.com/render/math?math=QI = \sqrt{\frac{|P_C-P_S|}{P_C%2BP_S}}" />
 
 <!--	
 	#!latex 

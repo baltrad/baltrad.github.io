@@ -114,7 +114,7 @@ or
 <img src="https://render.githubusercontent.com/render/math?math=\text{if}
 (Z_{(i)} > -32 \text{ dBZ } \text{ and } Z < \text{ATT}\_\text{Refl})
 \text{then}
-(A_{(i-1,i)} Z_{(i)} + PIA_{(0,i)})" />
+(A_{(i-1,i)} Z_{(i)} %2B PIA_{(0,i)})" />
 
 <!--	
 	#!latex
@@ -130,7 +130,7 @@ or
 
 Otherwise, i.e. when _Z<sub>(i)</sub>'' >= ATT_Refl, from reflectivity ''Z''<sub>(''i'')</sub> measured in ''i''-gate, ''PIA''<sub>(0,''i''-1)</sub> integrated from the radar site to the ''i''-1-gate, and first guess of attenuation ''A''’<sub>(''i''-1,''i'')</sub> between ''i''-1 and ''i''-gates calculated from the above equation for ''A'', the non-attenuated reflectivity ''Z<sub>cor''(''i_)</sub> can be obtained according to the formula:
 
-<img src="https://render.githubusercontent.com/render/math?math=Z_{cor(i)} = Z_{(i)}+(PIA_{(0,i-1)}+A'_{(i-1,i)})" />
+<img src="https://render.githubusercontent.com/render/math?math=Z_{cor(i)} = Z_{(i)}%2B(PIA_{(0,i-1)}%2BA'_{(i-1,i)})" />
 
 <!--	
 	#!latex 
@@ -140,7 +140,7 @@ Otherwise, i.e. when _Z<sub>(i)</sub>'' >= ATT_Refl, from reflectivity ''Z''<sub
 
 Then the attenuation _A'',,(''i''-1,''i''),, for distance between two neighbouring gates: ''i''-1 and ''i'' can be calculated from the formulas, and consequently path-integrated attenuation along the whole distance from radar site to the given ''i_-gate can be obtained from: 
 
-<img src="https://render.githubusercontent.com/render/math?math=PIA_{(0,i)} = PIA_{(0,i-1)}+A_{(i-1,i)}" />
+<img src="https://render.githubusercontent.com/render/math?math=PIA_{(0,i)} = PIA_{(0,i-1)}%2BA_{(i-1,i)}" />
 
 <!--	
 	#!latex 

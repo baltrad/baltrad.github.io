@@ -47,7 +47,7 @@ If the algorithm is run by means of BALTRAD toolbox then all the algorirthm para
 
 The algorithm is applied if elevation angle is smaller than BLOCK_MaxElev. A degree of partial beam blocking (_PBB_) is computed from a digital terrain map (DTM) taking into account the highest blocked point in the given beam cross-section (Bech et al., 2007):
 
-<img src="https://render.githubusercontent.com/render/math?math=PBB = \frac{y \sqrt{r_b^2 - y^2}+ r_b^2 \arcsin \frac{y}{r_b}+\frac{\pi r_b^2}{2} }{\pi r_b^2}" />
+<img src="https://render.githubusercontent.com/render/math?math=PBB = \frac{y \sqrt{r_b^2 - y^2}%2B r_b^2 \arcsin \frac{y}{r_b}%2B\frac{\pi r_b^2}{2} }{\pi r_b^2}" />
 
 <!--	
 	#!latex 
@@ -59,7 +59,7 @@ where _r,,b,,'' is the radius of radar beam cross-section at the given distance 
 
 Quantity _y'' in the equation is calculated as an altitude obtained from DTM for radar gate located in beam centre reduced by quantity ''h'' involving: (i) altitude of radar antenna, ''h,,0,,'', (ii) difference of altitude due to the Earth curvature, (iii) difference of altitude due to antenna elevation, ''ε_:
 
-<img src="https://render.githubusercontent.com/render/math?math=h = \sqrt{l^2+r+e^2+2lr_e \sin \epsilon} - r_e+h_0" />
+<img src="https://render.githubusercontent.com/render/math?math=h = \sqrt{l^2%2Br%2Be^2%2B2lr_e \sin \epsilon} - r_e%2Bh_0" />
 
 <!--	
 	#!latex 
@@ -70,7 +70,7 @@ where _r,,e,,'' is the effective Earth’s radius (8,493 km), ''l_ is the distan
 
 Correction of partial beam blocking is made by applying a multiplicative correction factor (Bech et al., 2007):
 
-<img src="https://render.githubusercontent.com/render/math?math=Z_{cor} = Z+10 \log_{10} (1-PBB)^{-1}" />
+<img src="https://render.githubusercontent.com/render/math?math=Z_{cor} = Z%2B10 \log_{10} (1-PBB)^{-1}" />
 
 <!--	
 	#!latex 
@@ -83,7 +83,7 @@ The quality index _QI,,PBB,,_ of gates where radar beam is considered as blocked
 
 <img src="https://render.githubusercontent.com/render/math?math=QI_{PBB} = \begin{cases}
 1-PBB\qquad\qquad\qquad\qquad\qquad\qquad\qquad\text{for\ } PBB <= \text{BLOCK}\_\text{PBBMax} \\
-(1-\text{BLOCK}\_\text{PBBMax})(QI_{PBB}(el+1))\qquad \text{for\ } PBB > \text{BLOCK}\_\text{PBBMax} \text{ and } el \text{ is not the number of the highest elevation\ }  \\
+(1-\text{BLOCK}\_\text{PBBMax})(QI_{PBB}(el%2B1))\qquad \text{for\ } PBB > \text{BLOCK}\_\text{PBBMax} \text{ and } el \text{ is not the number of the highest elevation\ }  \\
 0\quad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\text{for\ } PBB > \text{BLOCK}\_\text{PBBMax} \text{ and } el \text{ is the number of the highest elevation\ } 
 \end{cases}" />
 

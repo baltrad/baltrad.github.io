@@ -41,7 +41,7 @@ Radar data is considered to be better then raingauge network in reproduction of 
 3. Finally spatially interpolated raingauge data is corrected using the differences (errors of interpolation) according to the following formula:
 
 
-<img src="https://render.githubusercontent.com/render/math?math=R'=R_G+(R_R-R_{R'})" />
+<img src="https://render.githubusercontent.com/render/math?math=R' = R_G %2B (R_R - R_{R'})" />
 
 <!--	
 	#!latex 

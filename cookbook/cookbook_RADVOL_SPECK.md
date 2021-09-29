@@ -46,7 +46,7 @@ If the algorithm is run by means of BALTRAD toolbox then all the algorirthm para
 
 So called reverse specks are isolated gates without radar echo (_Z'' = –32 dBZ) surrounded by precipitation field. The introduced subalgorithm is employed to each elevation scan separately. A vicinity of a given gate (''α'', ''l'') ±SPECK_AGrid gates is considered. Number of non-echo gates ''s,,rspeck,,''(''α'', ''l_) in the grid is calculated from:
 
-<img src="https://render.githubusercontent.com/render/math?math=s_{rspeck}(\alpha ,l) = \sum_{m=\alpha -\text{SPECK}\_\text{AGrid}}^{\alpha +\text{SPECK}\_\text{AGrid}}  \sum_{n=l-\text{SPECK}\_\text{AGrid}}^{l+\text{SPECK}\_\text{AGrid}}  {f_{rspeck}(m,n)}">
+<img src="https://render.githubusercontent.com/render/math?math=s_{rspeck}(\alpha ,l) = \sum_{m=\alpha -\text{SPECK}\_\text{AGrid}}^{\alpha %2B\text{SPECK}\_\text{AGrid}}  \sum_{n=l-\text{SPECK}\_\text{AGrid}}^{l%2B\text{SPECK}\_\text{AGrid}}  {f_{rspeck}(m,n)}">
 
 <!--	
 	#!latex 
@@ -76,7 +76,7 @@ Parameter of the algorithm is threshold SPECK_ANum for _s,,rspeck,,''(''α'', ''
 
 As opposed to reverse specks, the ordinary ones are gates in which isolated echoes are observed that can be considered as measurement noise. Subalgorithm of the speck removal is analogous to the one used for reverse specks. A vicinity of a given gate (_α'', ''l'') ±SPECK_BGrid gates is considered.  Number of echo gates ''s,,speck,,''(''α'', ''l_) in the grid can be calculated from (Jurczyk et al., 2008):
 
-<img src="https://render.githubusercontent.com/render/math?math=s_{speck}(\alpha ,l) = \sum_{m=\alpha -\text{SPECK}\_\text{BGrid}}^{\alpha +\text{SPECK}\_\text{BGrid}}  \sum_{n=l-\text{SPECK}\_\text{BGrid}}^{l+\text{SPECK}\_\text{BGrid}}  {f_{speck}(m,n)}" />
+<img src="https://render.githubusercontent.com/render/math?math=s_{speck}(\alpha ,l) = \sum_{m=\alpha -\text{SPECK}\_\text{BGrid}}^{\alpha %2B\text{SPECK}\_\text{BGrid}}  \sum_{n=l-\text{SPECK}\_\text{BGrid}}^{l%2B\text{SPECK}\_\text{BGrid}}  {f_{speck}(m,n)}" />
 
 <!--	
 	#!latex 

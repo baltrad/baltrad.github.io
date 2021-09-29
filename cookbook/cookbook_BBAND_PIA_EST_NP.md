@@ -126,10 +126,6 @@ The estimate is applied to a low elevation angle PPI of horizontal reflectivity 
 
 The output is the estimated attenuation and this can be added to the PPI dBZH.
 
-<!--
-[[Image(BALTRAD+_algorithm scematic2.png, 300px)]]
--->
-
 ![BALTRAD+_algorithm scematic2](/images/BALTRAD+_algorithm scematic2.png)\
 Figure 5. Schematic description of the algorithm
 

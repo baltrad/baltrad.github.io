@@ -2,7 +2,7 @@
 Rain attenuation correction of reflectivity an differential reflectivity: *PolRainAttCorr*
 
 # *2. Basic description*
-A number of methods have been proposed in the literature for correcting Z,,HH,, for rain attenuation (Bringi el. al., 1990, Carey et al., 2000, Tesud et. al., 2000, Bringi et al., 2001). Describing each one of these is beyond the scope of this report. However, it is suffice to state that from an operational point of view, the so-called “Linear Ф<sub>DP</sub> with a fixed linear α”, by Bringi et. al., (1990) is preferred as it is easy to implement in real-time and is not too demanding computationally. However, its main dis-advantage is that it can over or under-estimate attenuation. In the current version of the software, this method has been implemented to correct for the attenuation suffered by Z<sub>HH</sub> and Z<sub>DR</sub> in rain.
+A number of methods have been proposed in the literature for correcting Z<sub>HH</sub> for rain attenuation (Bringi el. al., 1990, Carey et al., 2000, Tesud et. al., 2000, Bringi et al., 2001). Describing each one of these is beyond the scope of this report. However, it is suffice to state that from an operational point of view, the so-called “Linear Ф<sub>DP</sub> with a fixed linear α”, by Bringi et. al., (1990) is preferred as it is easy to implement in real-time and is not too demanding computationally. However, its main dis-advantage is that it can over or under-estimate attenuation. In the current version of the software, this method has been implemented to correct for the attenuation suffered by Z<sub>HH</sub> and Z<sub>DR</sub> in rain.
 
 # *3. Computational procedure*
 Similar to computing K<sub>DP</sub>, correcting Z<sub>HH</sub> and Z<sub>DR</sub> for rain attenuation is rather challenging as the underlying Ф<sub>DP</sub>(r) are very “noisy” i.e., generally contain many outliers. The current method used at DMI was inspired by Bringi et. al. (2005) and involve the following steps:
@@ -17,7 +17,7 @@ Similar to computing K<sub>DP</sub>, correcting Z<sub>HH</sub> and Z<sub>DR</sub
 # *4. Theoretical background*
 For an inhomogeneous path, i.e. A<sub>h</sub> varies along the path, the corrected Z<sub>HH</sub> (units of dB) is related to the measured measured Z<sub>HH</sub> at range r from the radar by the following expression
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{HH}(r) = Z^{measured}_{HH}(r) + 2\int_{0}^{r} A_h(r) dr  \tag{1}\end{equation*}" />
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{HH}(r) = Z^{measured}_{HH}(r) %2B 2\int_{0}^{r} A_h(r) dr  \tag{1}\end{equation*}" />
 
 <!--	
 	#!latex
@@ -28,7 +28,7 @@ For an inhomogeneous path, i.e. A<sub>h</sub> varies along the path, the correct
 
 Substituting equation (10) into the above expression and assuming a is constant we get
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{HH}(r) = Z^{measured}_{HH}(r) + 2\alpha\int_{0}^{r} K_{DP}(r) dr \tag{2}\end{equation*}" />
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{HH}(r) = Z^{measured}_{HH}(r) %2B 2\alpha\int_{0}^{r} K_{DP}(r) dr \tag{2}\end{equation*}" />
 
 <!--	
 	#!latex
@@ -37,7 +37,7 @@ Substituting equation (10) into the above expression and assuming a is constant 
 
 Now substituting for K<sub>DP</sub> from equation (1), the following expression is obtained for the corrected Z<sub>HH</sub>
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{HH}^{corrected}(r) = Z^{measured}_{HH}(r) + \alpha[\phi_{DP}(r)  - \phi_{DP}(0)] \tag{3}\end{equation*}" />
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{HH}^{corrected}(r) = Z^{measured}_{HH}(r) %2B \alpha[\phi_{DP}(r)  - \phi_{DP}(0)] \tag{3}\end{equation*}" />
 
 <!--	
 	#!latex
@@ -52,7 +52,7 @@ Thus knowing by how much Ф<sub>DP</sub> increases from its value at the origin 
 
 Just like the above radar horizontal reflectivity, Z<sub>HH</sub> , the differential reflectivity also suffer from rain attenuation, especially at C- and X-bands. To estimate the rain attenuation of Z<sub>DR</sub>, we repeat the above procedure for Z<sub>HH</sub>. We get in this case the following expression
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{DR}^{corrected}(r) = Z^{measured}_{DR}(r) + 2\int_{0}^{r} A_{DP}(r)dr (4) \tag{4}\end{equation*}" />
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{DR}^{corrected}(r) = Z^{measured}_{DR}(r) %2B 2\int_{0}^{r} A_{DP}(r)dr (4) \tag{4}\end{equation*}" />
 
 <!--	
 	#!latex
@@ -70,7 +70,7 @@ where A<sub>DP</sub> is the difference between the specific attenuations between
 
 Substituting equation (15) into (14) we get the following expression for the corrected Z<sub>DR</sub>
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{DR}^{corrected}(r) = Z^{measured}_{DR}(r) + \beta[\phi_{DP}(r)  - \phi_{DP}(0)] \tag{6}\end{equation*}" />
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*} Z_{DR}^{corrected}(r) = Z^{measured}_{DR}(r) %2B \beta[\phi_{DP}(r)  - \phi_{DP}(0)] \tag{6}\end{equation*}" />
 
 <!--	
 	#!latex
