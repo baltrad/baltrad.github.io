@@ -61,7 +61,7 @@ Add the new recipe under an appropriate category
 
 [Separation of convective and stratiform precipitation – CONVECTION](cookbook_CONV)
 
-[Combination of radar-based ground precipitation rate and raingauge network data – COMBINATION](http://git.baltrad.eu/trac/wiki/cookbook/ADJUSTMENT)
+[Combination of radar-based ground precipitation rate and raingauge network data – COMBINATION](cookbook_ADJUSTMENT)
 
 [Dynamical downscaling of ground precipitation rate – DOWNSCALE](http://git.baltrad.eu/trac/wiki/cookbook/DOWNSCALE)
 

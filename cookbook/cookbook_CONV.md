@@ -132,13 +132,13 @@ Map of quality index (QI) will be calculated for the output field. The QI will b
 -->	
 	
 # *6. Output*
-## *a) Data type using ODIM notation where possible, e.g. DBZH* #aDatatypeusingODIMnotationwherepossiblee.g.DBZH
+## *a) Data type using ODIM notation where possible, e.g. DBZH*
 Output quantity CLASS (convective/non-convective precipitation) as IMAGE object (in Cartesian coordinates) with:
 
 * "how": task - "pl.imgw.product2d.convection",
 * "how": task_args - parameters of CONVECTION algorithm.
 
-## *b) Quality index (QI) field* #bQualityindexQIfield
+## *b) Quality index (QI) field*
 Quality index field QIND as IMAGE object with:
 
 * "how": task - "pl.imgw.product2d.convection",
