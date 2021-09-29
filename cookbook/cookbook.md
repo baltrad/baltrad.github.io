@@ -25,7 +25,7 @@ Add the new recipe under an appropriate category
 
 [Hit-accumulation clutter filter: HAC](cookbook_HAC)
 
-[Identification and removal of residual non-precipitation echoes using the Meteosat Second Generation Cloud Type product: CTFILTER](http://git.baltrad.eu/trac/wiki/cookbook/CTFILTER)
+[Identification and removal of residual non-precipitation echoes using the Meteosat Second Generation Cloud Type product: CTFILTER](cookbook_CTFILTER)
 
 ## Biological Targets
 ## Solar monitoring
