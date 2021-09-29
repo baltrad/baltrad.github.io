@@ -82,12 +82,12 @@ The computational procedure involves the following steps for module B:
   d. classify the bin by choosing the predefined hydrometeor class with the highest score
 
 # *4. Theoretical background*
-In fuzzy logic the values of the P,,i,,, in equation (2), for the different hydrometeor classes are described by the membership functions. In the current version the latter are expressed as Betafunctions of the type shown in fig. 1 with the 3 parameters: a, ß and γ indicating the centre, halfwidth at inflection point and the slope of the curve (Lim et. al., 2005).[[BR]]
+In fuzzy logic the values of the P,,i,,, in equation (2), for the different hydrometeor classes are described by the membership functions. In the current version the latter are expressed as Betafunctions of the type shown in fig. 1 with the 3 parameters: a, ß and γ indicating the centre, halfwidth at inflection point and the slope of the curve (Lim et. al., 2005).
 
 ![Beta membership function](/images/beta_function.png)
 _Fig. 1 Beta membership function_
 
-As a way of example, fig. 2 shows the membership functions for the parameter Z,,HH,, for the different classes of rain.[[BR]]
+As a way of example, fig. 2 shows the membership functions for the parameter Z,,HH,, for the different classes of rain.
 
 
 ![Membership functions](/images/membershift_functions.png)
@@ -103,7 +103,7 @@ _Fig. 3 Membership functions of Z<sub>HH</sub>, Z<sub>DR</sub> and rho<sub>HV</s
 
 ## *Examples of output from the hydrometeor classifier*
 
-The current version of the algorithm does the so-called level 1 and level 2 classifications. In the level 1 classification a radar echo is classified into one of four simple classes: precipitation, clutter, clean air echoes, and external emitters. Figure 4 shows an example of the output.[[BR]]
+The current version of the algorithm does the so-called level 1 and level 2 classifications. In the level 1 classification a radar echo is classified into one of four simple classes: precipitation, clutter, clean air echoes, and external emitters. Figure 4 shows an example of the output.
 
 ![Radar image](/images/lev1_class_1.png)
 
@@ -133,17 +133,17 @@ _Fig. 6 shows the original radar product on the left and corresponding “cleane
 
 
 ## *References*
-Bringi, V. N., Chandrasekar, V.: 2001, _Polarimetric Doppler Weather Radar_, Cambridge Univ. press, Cambridge, UK.[[BR]]
+Bringi, V. N., Chandrasekar, V.: 2001, _Polarimetric Doppler Weather Radar_, Cambridge Univ. press, Cambridge, UK.
 
-Gill R.S., Sørensen M. B., Bøvith T., Koistinen J., Peura M., Michelson D., and Cremonini R., 2012, _BALTRAD dual polarization hydrometeor classifier_, ERAD 2012, 7th European conference on Radar in Meteorology and Hydrology[[BR]]
+Gill R.S., Sørensen M. B., Bøvith T., Koistinen J., Peura M., Michelson D., and Cremonini R., 2012, _BALTRAD dual polarization hydrometeor classifier_, ERAD 2012, 7th European conference on Radar in Meteorology and Hydrology
 
-Lim S., Chandrasekar V., and Bringi V. N., 2005, “_Hydrometeor classification system using dualpolarization radar measurements: Model improvements and in situ verification_”, IEEE transactions of Geosciences and remote sensing, vol. 43, no. 4, 792-801.[[BR]]
+Lim S., Chandrasekar V., and Bringi V. N., 2005, “_Hydrometeor classification system using dualpolarization radar measurements: Model improvements and in situ verification_”, IEEE transactions of Geosciences and remote sensing, vol. 43, no. 4, 792-801.
 
-Schuur, T., Ryzhkov A., and P. Heinselmann, 2003, _Observations and classification of echoes with the polarimetric WSR-88D radar_, NOAA National Severe Storms laboratory Tech. Report, Norman, Oklahoma, USA.[[BR]]
+Schuur, T., Ryzhkov A., and P. Heinselmann, 2003, _Observations and classification of echoes with the polarimetric WSR-88D radar_, NOAA National Severe Storms laboratory Tech. Report, Norman, Oklahoma, USA.
 
-Sugier, J., Tabary P., and J. Gourley, 2006, _Evaluation of dual polarization technology at C band for operational weather radar network_, report of the EUMETNET OPERA II, work packages 1.4 and 1.5.[[BR]]
+Sugier, J., Tabary P., and J. Gourley, 2006, _Evaluation of dual polarization technology at C band for operational weather radar network_, report of the EUMETNET OPERA II, work packages 1.4 and 1.5.
 
-Zrnic D. S., Ryzhkov A., Straka J., Liu Y., and Vivekanandan J., _Testing a procedure for automatic classification of hydrometeor types_, J. atmospheric and oceanic technology, vol. 18, 892-913.[[BR]]
+Zrnic D. S., Ryzhkov A., Straka J., Liu Y., and Vivekanandan J., _Testing a procedure for automatic classification of hydrometeor types_, J. atmospheric and oceanic technology, vol. 18, 892-913.
 
 
 
