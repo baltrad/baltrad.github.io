@@ -54,7 +54,7 @@ Add the new recipe under an appropriate category
 
 [Quality characterization due to distance to radar related effects – RADVOL-QC: BROAD](cookbook_RADVOL_BROAD)
 
-[Total quality index (QI) for scans/volumes – QI_TOTAL](http://git.baltrad.eu/trac/wiki/cookbook/QIT)
+[Total quality index (QI) for scans/volumes – QI_TOTAL](cookbook_QITOTAL)
 
 ## QPE
 [Precipitation accumulation - ACRR](http://git.baltrad.eu/trac/wiki/cookbook/ACRR)
