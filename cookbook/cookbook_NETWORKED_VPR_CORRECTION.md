@@ -21,7 +21,6 @@ The classification scheme of VPRs embedded into the correction algorithm and use
 ## Equations
 
 ![VPR Equations](/images/VPR_equations.png)
-	
 
 # 6. Output.
 ## a) Data type using ODIM notation where possible, e.g. DBZH
