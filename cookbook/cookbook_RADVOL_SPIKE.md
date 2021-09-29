@@ -128,7 +128,7 @@ Quality index _QI,,SPIKE,,_ for the whole radar beam in which spike is detected 
 
 Generally:
 
-![Example diagram](https://g.gravizo.com/svg?digraph S {node [shape=record];rankdir="TB";size="5,4";fontname="Arial";"Detection of wide (A-type) spikes"->"Detection of narrow (B-type) spikes"	"Detection of narrow (B-type) spikes"->"Interpolation or removal of the spikes"})
+![RADVOL SPIKE generally](/images/RADVOL_SPIKE_generally.png)
 
 <!--	
 	#!graphviz
