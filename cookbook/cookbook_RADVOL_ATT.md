@@ -44,8 +44,9 @@ Set of the algorithm parameters:
 | Minimum reflectivity to apply the correction (dBZ) | ATT_Refl | 4.0 |
 | Maximum correction within last km (dB) | ATT_Last | 1.0 |
 | Maximum summarized correction (dB) | ATT_Sum | 5.0 |
-^*^ The radar bands are defined in terms of wavelength as: X: 2.5 - 3.75 cm; C: 3.75 - 7.5 cm, and S: 7.5 - 15.0 cm.
-^#^ Valid in 18°C (Battan, 1973).
+
+The radar bands are defined in terms of wavelength as: X: 2.5 - 3.75 cm; C: 3.75 - 7.5 cm, and S: 7.5 - 15.0 cm.
+Valid in 18°C (Battan, 1973).
 
 At first the XML file is checked whether there exists group for a considered radar (based on the radar name read from "what"/source(NOD)), which contains the algorithm parameters. If "yes", then parameters are read from that XML group, but if it is impossible for a particular parameter, then default value from source code is taken. If the group does not exist, parameters are read from <default> group in XML file in analogous way.
 
