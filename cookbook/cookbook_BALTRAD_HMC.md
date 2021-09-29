@@ -5,9 +5,12 @@ Baltrad Hydrometer Classifyer BALTRAD-HMC
 
 Hydrometeor classification at volume level is carried out using the fuzzy logic methodology (Bringi and Chandrasekar, 2001, Zrnic et. al., 2001, Schuur et. al., 2003, Lim et. al., 2005). In the current approach, a given bin of hydrometeor class j has a score Sj given by the relation
 
-	
+<img src="https://render.githubusercontent.com/render/math?math=S_j = \frac{\sum_{i} w_i P_i}{\sum_i w_i}">
+
+<!--	
 	#!latex
 	$ S_j = \frac{\sum_{i} w_i P_i}{\sum_i w_i} $ (eq. 1)
+-->	
 	 
 
 where P,,i,, and W,,i,, are the value of the parameter i, and the associated weight, for the class j. The radar parameters that have been used in the classifier are: Z,,HH,,, Z,,DR,,, K,,DP,,, σ,,HV,, , plus the texture parameters, associated with Z,,HH,,, Z,,DR,,, Ф,,DP,, (Schuur et. al., 2003, Sugier et. al., 2006). In fuzzy logic the values of the P,,i,, for the different hydrometeor classes are described by the membership functions (MF) [#point1 (see section 4)].
@@ -29,7 +32,7 @@ In the current version of the algorithm the following 12 hydrometeor classes hav
 However, internally in the BALTRAD-HMC software there are two classes each of ground and sea clutter, ten classes of external emitters including the signals from the sun and three classes of CAE. Further, the light rain class consists of four sub-classes; light drizzle, moderate drizzle, heavy drizzle and light rain.
 
 
-== *[=#point2] 3. Computational procedure*==
+# *3. Computational procedure*
 
 The software consists of two main modules:
 A. Computation of all the radar parameters that are to be used in the fuzzy logic classifier
@@ -76,17 +79,17 @@ c. using fuzzy logic rules compute the final score for each predefined classes (
 d. classify the bin by choosing the predefined hydrometeor class with the highest score
 
 
-# *[=#point1] 4. Theoretical background*
+# *4. Theoretical background*
 In fuzzy logic the values of the P,,i,,, in equation (2), for the different hydrometeor classes are described by the membership functions. In the current version the latter are expressed as Betafunctions of the type shown in fig. 1 with the 3 parameters: a, ß and γ indicating the centre, halfwidth at inflection point and the slope of the curve (Lim et. al., 2005).[[BR]]
 
-![Beta membership function](/image/beta_function.png)
+![Beta membership function](/images/beta_function.png)
 
 _Fig. 1 Beta membership function_
 
 As a way of example, fig. 2 shows the membership functions for the parameter Z,,HH,, for the different classes of rain.[[BR]]
 
 
-![Membership functions](/image/membershift_functions.png)
+![Membership functions](/images/membershift_functions.png)
 
 _Fig. 2 Membership functions for Z,,HH,, for different categories of rain._
 
