@@ -37,8 +37,8 @@ Defined projection and domain of Cartesian output.
 # *5. Logical steps, using any of: text, flow charts, graphics, equations (or references to equations), conditional branches in “all possible cases”.*
 The algorithm transforms values for measurement gates of polar coordinates (_α'', ''l''), where ''α'' is the azimuth, ''l'' is the distance from the radar site, into values interpolated for Cartesian pixels defined by coordinates: (''x'', ''y_).
 
-[[Image(Fig_1_PPI.gif)]]
 
+![Fig 1 PPI](/images/Fig_1_PPI.gif)\
 _Fig. 1. Scheme of interpolation of gate values into Cartesian pixel._
 
 *Algorithm parameters*
