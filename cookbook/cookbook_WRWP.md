@@ -66,7 +66,9 @@ with
 	
 Equation (3) can be extended to _n_ velocities which results in a nonhomogeneous matrix equation of the form:
 
-	
+![Fig 4 WRWP](/images/Fig_WRWP_formula_4.png)
+
+<!--	
 	#!latex
 	\begin{equation*}
 	 \label{matrix_vn.eq}
@@ -90,14 +92,18 @@ Equation (3) can be extended to _n_ velocities which results in a nonhomogeneous
 	  w_3
 	 \end{pmatrix}}_{\bf w} \;. \hspace{10mm} (7)
 	\end{equation*}
+-->
 	
-For more than three independent measurements, i.e. _n''>3, Eq. (7) is an overdetermined linear system which can be solved using a QR factorization of ''A''. The resulting values ''w,,1,,'', ''w,,2,,'', and ''w,,3,,'' are utilized to determine ''α'', ''β'', and ''γ_ in Eq. (2). Squaring and adding Eqs (4) and (5) leads to
+For more than three independent measurements, i.e. _n_>3, Eq. (7) is an overdetermined linear system which can be solved using a QR factorization of _A_. The resulting values _w<sub>1</sub>_, _w<sub>2</sub>_, and _w<sub>3</sub>_ are utilized to determine _α_, _β_, and _γ_ in Eq. (2). Squaring and adding Eqs (4) and (5) leads to
 
-	
+![Fig 5 WRWP](/images/Fig_WRWP_formula_5.png)
+
+<!--	
 	#!latex
 	\begin{equation*}
 	 w_1^2 + w_2^2 \sqrt{w_1^2 + w_2^2} \;. \hspace{10mm} (8)
 	\end{equation*}
+-->	
 	
 Solving Eq. (4) for _α_ and inserting it into Eq. (5) results in
 
