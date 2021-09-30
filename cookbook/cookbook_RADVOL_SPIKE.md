@@ -81,12 +81,12 @@ The second subalgorithm is employed to recognize and remove “narrow” spikes,
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{if}"/><br/>
 <img src="https://render.githubusercontent.com/render/math?math=(((Z(\alpha -d,l)=-32 \text{dBZ}) \text{ and } (Z(\alpha,l)- Z(\alpha -d,l)>\text{SPIKE}\_\text{BDiff} ))"/><br/>
-<img src="https://render.githubusercontent.com/render/math?math=\text{or } (\text{spike A in gate }(\alpha -d,l)) \text{ or } (\text{potential spike B in gate } (\alpha -d,l)))"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{or } (\text{spike A in gate }(\alpha -d,l)) \text{ or } (\text{potential spike B in gate } (\alpha -d,l)))"/><br/>
 <img src="https://render.githubusercontent.com/render/math?math=\text{and }"><br/>
-<img src="https://render.githubusercontent.com/render/math?math=(((Z(\alpha%2Bd,l)=-32 \text{dBZ}) \text{ and } (Z(\alpha,l)- Z(\alpha %2Bd,l)>\text{SPIKE}\_\text{BDiff} ))"><br/>
-<img src="https://render.githubusercontent.com/render/math?math=\text{or } (\text{spike A in gate }(\alpha %2Bd,l)) \text{ or } (\text{potential spike B in gate } (\alpha %2Bd,l)))"><br/>
-<img src="https://render.githubusercontent.com/render/math?math=\text{then}"><br/>
-<img src="https://render.githubusercontent.com/render/math?math=\text{there is potential spike B in the gate }(\alpha,l)"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=(((Z(\alpha%2Bd,l)=-32 \text{dBZ}) \text{ and } (Z(\alpha,l)- Z(\alpha %2Bd,l)>\text{SPIKE}\_\text{BDiff} ))"/><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{or } (\text{spike A in gate }(\alpha %2Bd,l)) \text{ or } (\text{potential spike B in gate } (\alpha %2Bd,l)))"/><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{then}"/><br/>
+<img src="https://render.githubusercontent.com/render/math?math=\text{there is potential spike B in the gate }(\alpha,l)"/><br/>
 
 <!--	
 	#!latex 
@@ -114,7 +114,7 @@ Finally, all the gates with spikes of A- or B-type are replaced by reflectivitie
 
 Quality index _QI,,SPIKE,,_ for the whole radar beam in which spike is detected equals:
 
-<img src="https://render.githubusercontent.com/render/math?math=QI_{SPIKE}=\begin{cases}\text{SPIKE}\_\text{QI} \qquad \text{for gate with spike echo}\\1\qquad\qquad\qquad\text{for gate without spike echo} \end{cases}">
+<img src="https://render.githubusercontent.com/render/math?math=QI_{SPIKE}=\begin{cases}\text{SPIKE}\_\text{QI} \qquad \text{for gate with spike echo}\\1\qquad\qquad\qquad\text{for gate without spike echo} \end{cases}" />
 
 <!--	
 	#!latex 
