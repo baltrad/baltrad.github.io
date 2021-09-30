@@ -87,7 +87,7 @@ Add the new recipe under an appropriate category
 [wiki:cookbook/WRWP Wind profiles](cookbook_WRWP)
 
 ## Data visualization
-[wiki:cookbook/BALTRAD-WMS BALTRAD-WMS]
+[wiki:cookbook/BALTRAD-WMS BALTRAD-WMS](cookbook_BALTRAD_WMS)
 
 ## Miscellaneous
 [wiki:cookbook/HEXED-QUANTITIES Representation of ODIM quantities as a compact string signature]
