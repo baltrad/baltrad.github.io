@@ -92,7 +92,4 @@ Add the new recipe under an appropriate category
 ## Miscellaneous
 [Representation of ODIM quantities as a compact string signature](cookbook_HEXED_QUANTITIES)
 
-<!--
-![Cooks](/images/cooks.jpg)
--->
 
