@@ -62,7 +62,7 @@ Echo Top (ETOP) product represents Cartesian image of height of echo (cloud) top
 	
 In case when both considered measurements are with echo (_Z_ ≥ _Z_<sub>0</sub>) then _h<sub>int<sub>_ = min (<sub>h</sub><sub>max</sub>, max (_h_’, _h_”)).
 
-![Fig 1 ETOP](/images/(Fig_1_ET.gif)\
+![Fig 1 ETOP](/images/Fig_1_ET.gif)\
 _Fig. 1. Scheme of generation of radar Echo Top product (ETOP)._
 
 There are considered only measurements (Cartesian pixels on PPIs) between _h_,,min,, and _h_,,max,,, and two closest ones (below _h_<sub>min</sub> and above _h_<sub>max</sub>). At first, height _h_ of the highest measurement with echo (_Z_ ≥ _Z_<sub>0</sub>) is found.
