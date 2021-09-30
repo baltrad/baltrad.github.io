@@ -53,11 +53,11 @@ Set of the algorithm parameters:
 
 Echo Top (ETOP) product represents Cartesian image of height of echo (cloud) tops defining cloud boundary with proper level of radar reflectivity _Z_<sub>0</sub> (in dBZ) (Fig. 1). The _ETOP_ (in km) is detected in a preset range of height (between _h_<sub>min</sub> and _h_<sub>max</sub>) and generally is calculated by interpolation of reflectivity _Z_ between two highest gates for which the reflectivity passes _Z_,,0,, value. If searched height of _Z_<sub>0</sub> value is between two measurements _Z_’ and _Z_” detected at heights _h_’ and _h_” respectively, then in order to find the height _h<sub>int</sub>_ at which echo top occurs (_Z_ = _Z_<sub>0</sub>) the linear interpolation is applied:
 
-<img src="https://render.githubusercontent.com/render/math?math=h_{int} = \frac {(Z_0 - Z_) (h' - h'')} {(Z' - Z'')} + h_" />
+<img src="https://render.githubusercontent.com/render/math?math=h_{int} = \frac{(Z_0 - Z'') (h' - h'')} {(Z' - Z'')} %2B h''" />
 
 <!--	
 	#!latex 
-	$  h_{int} = \frac {(Z_0 - Z_) (h' - h'')} {(Z' - Z'')} + h_  $ 
+	$  h_{int} = \frac {(Z_0 - Z'') (h' - h'')} {(Z' - Z'')} + h_  $ 
 -->	
 	
 In case when both considered measurements are with echo (_Z_ ≥ _Z_<sub>0</sub>) then _h<sub>int<sub>_ = min (<sub>h</sub><sub>max</sub>, max (_h_’, _h_”)).
