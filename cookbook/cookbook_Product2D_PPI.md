@@ -56,7 +56,7 @@ Set of the algorithm parameters:
 
 The algorithm interpolates data in different ways for pixels close to radar site, where there is dense pattern of gates, and farther from radar site (so called inside and outside method). The border in distance to radar (_D'') is defined by empirically determined function of measurement parameters: step in azimuth d''Az'' (°), step in distance from radar d''bin_ (km), and Cartesian spatial resolution dx (km):
 
-<img src="https://render.githubusercontent.com/render/math?math=D = \sqrt{ \frac{9500(\frac {1.3}{\text{d}Az} + \frac{2.3}{\text{d}bin} + 1.6 \text{d}x) - 39000} {\pi} }" />
+<img src="https://render.githubusercontent.com/render/math?math=D = \sqrt{ \frac{9500(\frac {1.3}{\text{d}Az} %2B \frac{2.3}{\text{d}bin} %2B 1.6 \text{d}x) - 39000} {\pi} }" />
 	
 <!--	
 	#!latex 
@@ -99,7 +99,7 @@ where: _W<sub>Di</sub>'' is the weight related to distance of ''i''-gate to pixe
 
 The polar coordinates of selected _i''-gate are transformed into Cartesian coordinates (''x,,i,,'', ''y,,i,,'') in order to determine its distance to the considered pixel (''x'', ''y_):
 
-<img src="https://render.githubusercontent.com/render/math?math=D_i = \sqrt{ (x - x_i)^2 + (y - y_i)^2 }" />
+<img src="https://render.githubusercontent.com/render/math?math=D_i = \sqrt{ (x - x_i)^2 %2B (y - y_i)^2 }" />
 
 <!--	
 	#!latex 
@@ -166,7 +166,7 @@ _Fig. 2. Scheme of bilinerar interpolation._
    where _A<sub>i</sub>_ is the area of annulus sector.
 
 * cressman:\
-<img src="https://render.githubusercontent.com/render/math?math=\quad \quad W_{Di} = \frac{a^2-D_i^2}{a^2+D_i^2}" />
+<img src="https://render.githubusercontent.com/render/math?math=\quad \quad W_{Di} = \frac{a^2-D_i^2}{a^2%2BD_i^2}" />
 
 <!--	
 	#!latex 
