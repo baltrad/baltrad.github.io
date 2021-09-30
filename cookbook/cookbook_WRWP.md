@@ -107,11 +107,14 @@ For more than three independent measurements, i.e. _n_>3, Eq. (7) is an overdete
 	
 Solving Eq. (4) for _α_ and inserting it into Eq. (5) results in
 
-	
+![Fig 6 WRWP](/images/Fig_WRWP_formula_6.png)
+
+<!--
 	#!latex
 	\begin{equation*}
 	 \frac{w_2}{w_1} \frac{w_2}{w_1} \;\; \Leftrightarrow \;\; \beta = \arctan\frac{w_2}{w_1} \;.
 	\end{equation*}
+-->	
 	
 Finally, Eq. (6) provides an expression for the vertical displacement _γ''. Hence, Eq. (2) describes the radial wind model which is closest to the observations. The real wind velocity is identical with the amplitude ''α_ in Eq. (8) while the wind direction is obtained from the derivative with respect to azimuth angle
 
