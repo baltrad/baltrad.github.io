@@ -76,7 +76,7 @@ Add the new recipe under an appropriate category
 
 [Quality-based echo top (ETOP) product generation – Product2D: ETOP](cookbook_Product2D_ETOP)
 
-[Quality-based vertically integrated liquid water (VIL) product generation – Product2D: VIL](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_VIL)
+[Quality-based vertically integrated liquid water (VIL) product generation – Product2D: VIL](cookbook_Product2D_VIL)
 
 ## Compositing
 [Quality-based compositing based on QI_TOTAL: QCOMP](http://git.baltrad.eu/trac/wiki/cookbook/QCOMP)
