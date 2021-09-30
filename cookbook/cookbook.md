@@ -82,7 +82,7 @@ Add the new recipe under an appropriate category
 [Quality-based compositing based on QI_TOTAL: QCOMP](cookbook_QCOMP)
 
 ## Dealiasing and wind profiles
-[wiki:cookbook/DEALIAS Dealiasing]
+[wiki:cookbook/DEALIAS Dealiasing](cookbook_DEALIAS)
 
 [wiki:cookbook/WRWP Wind profiles]
 
