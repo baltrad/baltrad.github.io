@@ -116,34 +116,43 @@ Solving Eq. (4) for _α_ and inserting it into Eq. (5) results in
 	\end{equation*}
 -->	
 	
-Finally, Eq. (6) provides an expression for the vertical displacement _γ''. Hence, Eq. (2) describes the radial wind model which is closest to the observations. The real wind velocity is identical with the amplitude ''α_ in Eq. (8) while the wind direction is obtained from the derivative with respect to azimuth angle
+Finally, Eq. (6) provides an expression for the vertical displacement _γ_. Hence, Eq. (2) describes the radial wind model which is closest to the observations. The real wind velocity is identical with the amplitude ''α_ in Eq. (8) while the wind direction is obtained from the derivative with respect to azimuth angle
 
-	
+![Fig 7 WRWP](/images/Fig_WRWP_formula_7.png)
+
+<!--	
 	#!latex
 	\begin{equation*}
 	 \frac{\partial V}{\partial \phi} = \alpha \cos(\phi + \beta) \stackrel{!}{=} 0 \;. \hspace{10mm} (9)
 	\end{equation*}
+-->	
 	
 Hence, Eq. (9) equals zero for
 
-	
+![Fig 8 WRWP](/images/Fig_WRWP_formula_8.png)
+
+<!--	
 	#!latex
 	\begin{eqnarray*}
 	 \phi_1 + \beta \frac{\pi}{2} - \beta \\
 	 \phi_2 + \beta \frac{3}{2}\pi - \beta
 	\end{eqnarray*}
+-->	
 	
-where _φ,,1 ,,''and ''φ,,2 ,,_are the extreme values of Eq. (2). The second derivative of Eq. (2) with respect to azimuth angle is
+where _φ<sub>1</sub>_ and _φ<sub>2</sub>_ are the extreme values of Eq. (2). The second derivative of Eq. (2) with respect to azimuth angle is
 
-	
+![Fig 9 WRWP](/images/Fig_WRWP_formula_9.png)
+
+<!--	
 	#!latex
 	\begin{eqnarray*}
 	 \frac{\partial^2 V}{\partial \phi^2} & = & -\alpha \sin(\phi + \beta) \\
 	 \left. \frac{\partial^2 V}{\partial \phi^2} \right|_{\phi_1} & = & -\alpha \\
 	 \left. \frac{\partial^2 V}{\partial \phi^2} \right|_{\phi_2} & = & \alpha \;.
 	\end{eqnarray*}
+-->
 	
-From Eq. (8) we know that _α''>0. Thus, the radial velocity in Eq. (2) has a maximum at ''φ,,1,,'' and a minimum at ''φ,,2,,''. Usually the wind direction is expressed in terms of the direction from which the wind originates (for example, a westerly wind blows from the west to the east). Furthermore, radial velocities away from the radar (outbound) are defined as positive while velocities towards the radar (inbound) are defined as negative. Therefore the wind direction in the specified height layer is given by ''φ,,2,,_.
+From Eq. (8) we know that _α_>0. Thus, the radial velocity in Eq. (2) has a maximum at _φ<sub>1</sub>_ and a minimum at _φ<sub>2</sub>_. Usually the wind direction is expressed in terms of the direction from which the wind originates (for example, a westerly wind blows from the west to the east). Furthermore, radial velocities away from the radar (outbound) are defined as positive while velocities towards the radar (inbound) are defined as negative. Therefore the wind direction in the specified height layer is given by _φ<sub>2</sub>_.
 
 # 6. Output.
 ## a) Data type using ODIM notation where possible, e.g. DBZH
@@ -151,3 +160,4 @@ dbz, dbz_dev, ff, ff_dev, dd, n (DBZH/VRAD)
 
 ## b) Added quality indicators
 # 7. Outline of a test concept exemplifying the algorithm, as a suggestion for checking that an implementation has been successful.
+
