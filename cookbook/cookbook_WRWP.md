@@ -37,7 +37,7 @@ Assuming a uniform wind field the radial wind (_V_) has the form of a sine for c
 	\end{equation*}
 -->	
 	
-where _φ_ is the azimuth angle. The four constants are amplitude ( |_α_| ), period (2π/_k_), phase shift (_β_), and vertical displacement (_γ_). The terminal velocity of the falling hydrometeors is implicitly included in _γ_. For _k_=1 Eq. (1) yields
+where _φ_ is the azimuth angle. The four constants are amplitude ( %7C_α_%7C ), period (2π/_k_), phase shift (_β_), and vertical displacement (_γ_). The terminal velocity of the falling hydrometeors is implicitly included in _γ_. For _k_=1 Eq. (1) yields
 
 ![Fig 2 WRWP](/images/Fig_WRWP_formula_2.png)
 
