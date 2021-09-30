@@ -28,16 +28,22 @@ to fetch the yum repo file.
 The latest official release is 2.2.1
 
 
-%> git clone git://git.baltrad.eu/node-installer.git or  
+%> git clone git://git.baltrad.eu/node-installer.git or
+
 %> git clone http://git.baltrad.eu/node-installer.git
+
 %> cd node-installer 
+
 %> git checkout 2.2.1
 
 or if you already have a source repository that you have built from scratch, you can speed up the process by doing
 
 %> cd node-installer
+
 %> git checkout master
+
 %> git pull
+
 %> git checkout 2.2.1
 
 ## Release date: 2016-08-26
