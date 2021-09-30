@@ -84,7 +84,7 @@ Add the new recipe under an appropriate category
 ## Dealiasing and wind profiles
 [wiki:cookbook/DEALIAS Dealiasing](cookbook_DEALIAS)
 
-[wiki:cookbook/WRWP Wind profiles]
+[wiki:cookbook/WRWP Wind profiles](cookbook_WRWP)
 
 ## Data visualization
 [wiki:cookbook/BALTRAD-WMS BALTRAD-WMS]

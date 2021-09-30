@@ -155,7 +155,7 @@ Finally, the dealiased radial winds (_V<sub>d</sub>_) are calculated by adding m
 
 <img src="https://render.githubusercontent.com/render/math?math=k^* = \min\limits_{k} \left\{ \left|2\,k\,V_u - (V_t^* -V_o)\right| \right\} \:\:\: k \in \{..., -2, -1, 0, 1, 2, ...\}" />
 
-<img src="https://render.githubusercontent.com/render/math?math=V_d & = & V_o + 2\,k^*\,V_u" />
+<img src="https://render.githubusercontent.com/render/math?math=V_d = V_o + 2\,k^*\,V_u" />
 	
 <!--	
 	#!latex
