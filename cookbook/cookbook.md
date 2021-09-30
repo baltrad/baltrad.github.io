@@ -72,7 +72,7 @@ Add the new recipe under an appropriate category
 ## 2-D products
 [Quality-based PPI product generation – Product2D: PPI](cookbook_Product2D_PPI)
 
-[Quality-based maximum of reflectivity (MAX) product generation – Product2D: MAX](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_MAX)
+[Quality-based maximum of reflectivity (MAX) product generation – Product2D: MAX](cookbook_Product2D_MAX)
 
 [Quality-based echo top (ETOP) product generation – Product2D: ETOP](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_ET)
 
