@@ -40,6 +40,7 @@ The algorithm generates maximum of reflectivity (MAX) 2-D products in Cartesian 
 *Algorithm parameters*
 
 Set of the algorithm parameters:
+
 | **Description** | **Denotation** | **Unit** | **Default value** |
 | Lower height limit for MAX product generation | MAX_hMin | km | 1 |
 | Upper height limit for MAX product generation | MAX_hMax | km | 20 |
