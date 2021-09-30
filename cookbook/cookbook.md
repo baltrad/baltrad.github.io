@@ -67,7 +67,7 @@ Add the new recipe under an appropriate category
 
 [Networked VPR correction](cookbook_NETWORKED_VPR_CORRECTION)
 
-[Dynamic R(Z) using single-polarisation data and ground observations – RZ_DYN_OBS](http://git.baltrad.eu/trac/wiki/cookbook/RZ_DYN_OBS)
+[Dynamic R(Z) using single-polarisation data and ground observations – RZ_DYN_OBS](cookbook_RZ_DYN_OBS)
 
 ## 2-D products
 [Quality-based PPI product generation – Product2D: PPI](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_PPI)
