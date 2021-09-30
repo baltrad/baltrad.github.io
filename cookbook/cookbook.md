@@ -74,7 +74,7 @@ Add the new recipe under an appropriate category
 
 [Quality-based maximum of reflectivity (MAX) product generation – Product2D: MAX](cookbook_Product2D_MAX)
 
-[Quality-based echo top (ETOP) product generation – Product2D: ETOP](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_ET)
+[Quality-based echo top (ETOP) product generation – Product2D: ETOP](cookbook_Product2D_ETOP)
 
 [Quality-based vertically integrated liquid water (VIL) product generation – Product2D: VIL](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_VIL)
 

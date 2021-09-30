@@ -81,7 +81,7 @@ The second component _QI<sub>scope</sub>'' is determined based on heights of the
 
 - if _h<sub>highest</sub>'' ≥ ''h''<sub>min</sub> and ''h<sub>lowest</sub>'' <= ''h''<sub>max</sub> then ''QI<sub>scope</sub>'' depends on what part of height range between ''h''<sub>min</sub> and ''h_<sub>max</sub> was scanned:
 
-<img src="https://render.githubusercontent.com/render/math?math=QI_{scope} = \frac {min(h_{highest},h_{lowest}) - max(h_{lowest},h_{min})} {h_{max} - h_{min}}" />
+ <img src="https://render.githubusercontent.com/render/math?math=QI_{scope} = \frac {min(h_{highest},h_{lowest}) - max(h_{lowest},h_{min})} {h_{max} - h_{min}}" />
   	
 <!--  	
 	#!latex 
