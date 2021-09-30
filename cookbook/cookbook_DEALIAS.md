@@ -39,21 +39,31 @@ y = r \sin \phi
 	\end{eqnarray*}
 -->	
 	
-Thus the unambiguous wind velocity _V,,u,,'' can be mapped onto the circumference of a cylinder with radius ''r_:
+Thus the unambiguous wind velocity _V<sub>u</sub>_ can be mapped onto the circumference of a cylinder with radius _r_:
 
-	
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*}
+2 \pi r \frac{V_u}{\pi} \:.
+\end{equation*}" />
+
+<!--	
 	#!latex
 	\begin{equation*}
 	  2 \pi r \frac{V_u}{\pi} \;.
 	\end{equation*}
+-->	
 	
-Assuming that _φ'' equals π for ''V,,o,,''=''V,,u,,_ results in
+Assuming that _φ_ equals π for _V<sub>o</sub>_=_V<sub>u</sub>_ results in
 
+<img src="https://render.githubusercontent.com/render/math?math=\begin{equation*}
+	  \phi = V_o \: \frac{\pi}{V_u}
+	\end{equation*}" />
 	
+<!--	
 	#!latex
 	\begin{equation*}
 	  \phi = V_o \; \frac{\pi}{V_u}
 	\end{equation*}
+-->	
 	
 where _V,,o,,_ is the observed radial wind. Hence, the corresponding Cartesian coordinates are given by
 
