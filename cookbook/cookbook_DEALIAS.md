@@ -26,7 +26,7 @@ Polar volume or scan
 # 5. Logical steps
 The polar coordinates _r_ (the radial coordinate) and _φ_ (the angular coordinate) are defined in terms of Cartesian coordinates by
 
-      <img src="https://render.githubusercontent.com/render/math?math=\begin{align*}
+ <img src="https://render.githubusercontent.com/render/math?math=\begin{align*}
 x = r \cos \phi\\
 y = r \sin \phi
 \end{align*}" />
