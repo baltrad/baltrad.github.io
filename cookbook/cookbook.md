@@ -79,7 +79,7 @@ Add the new recipe under an appropriate category
 [Quality-based vertically integrated liquid water (VIL) product generation – Product2D: VIL](cookbook_Product2D_VIL)
 
 ## Compositing
-[Quality-based compositing based on QI_TOTAL: QCOMP](http://git.baltrad.eu/trac/wiki/cookbook/QCOMP)
+[Quality-based compositing based on QI_TOTAL: QCOMP](cookbook_QCOMP)
 
 ## Dealiasing and wind profiles
 [wiki:cookbook/DEALIAS Dealiasing]
