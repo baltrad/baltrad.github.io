@@ -76,13 +76,14 @@ Chaining the polar QC algorithms together is a simple matter of using a script l
 
 In generating _QI_TOTAL _for each site, each of its input quality indicators can be assigned a weight. These can be looked up from XML file; default weights are included.
 
-Composite generation using QCOMP is performed using the output from polar QC. The compositing must be based on a conventional selection criterion, e.g. in cases where all input data have the same quality. This criterion is selectable from among those presently available in the toolbox 'slow compositing' functionality: nearest radar, lowest value to the Earth's surface, PMAX and MAX. Each site's _QI_TOTAL'' may be assigned a weight when generating the composite. This can be looked up from the same XML file as is used to process the single-site polar input data. A multiplicative model is suggested for calculating ''QI_TOTAL_ for these purposes.
+Composite generation using QCOMP is performed using the output from polar QC. The compositing must be based on a conventional selection criterion, e.g. in cases where all input data have the same quality. This criterion is selectable from among those presently available in the toolbox 'slow compositing' functionality: nearest radar, lowest value to the Earth's surface, PMAX and MAX. Each site's _QI_TOTAL_ may be assigned a weight when generating the composite. This can be looked up from the same XML file as is used to process the single-site polar input data. A multiplicative model is suggested for calculating _QI_TOTAL_ for these purposes.
 
 Performance of this algorithm can be greatly improved if this composite generator is "tiled" for large composite domains, as was successfully shown in the trial of the toolbox for Odyssey (Michelson and Henja, 2013, Henja and Michelson, 2012). A prerequisite, however, is that there are as many logical CPU cores as there are tiles. For the trial at the European level, six logical CPU cores were required. (A normal quad-core CPU has eight logical cores.)
 
 # 6. Output.
 ## a) Data type using ODIM notation where possible, e.g. DBZH
 ## b) Added quality indicators
+
 | **QC** | **how/task** | **Comment** |
 | ropo | fi.fmi.ropo.detector.classification | |
 | hac | eu.opera.odyssey.hac | |
