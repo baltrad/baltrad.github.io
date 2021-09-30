@@ -70,7 +70,7 @@ Add the new recipe under an appropriate category
 [Dynamic R(Z) using single-polarisation data and ground observations – RZ_DYN_OBS](cookbook_RZ_DYN_OBS)
 
 ## 2-D products
-[Quality-based PPI product generation – Product2D: PPI](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_PPI)
+[Quality-based PPI product generation – Product2D: PPI](cookbook_Product2D_PPI)
 
 [Quality-based maximum of reflectivity (MAX) product generation – Product2D: MAX](http://git.baltrad.eu/trac/wiki/cookbook/Product2D_MAX)
 
