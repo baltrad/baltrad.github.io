@@ -82,14 +82,17 @@ Add the new recipe under an appropriate category
 [Quality-based compositing based on QI_TOTAL: QCOMP](cookbook_QCOMP)
 
 ## Dealiasing and wind profiles
-[wiki:cookbook/DEALIAS Dealiasing](cookbook_DEALIAS)
+[Dealiasing](cookbook_DEALIAS)
 
-[wiki:cookbook/WRWP Wind profiles](cookbook_WRWP)
+[Wind profiles](cookbook_WRWP)
 
 ## Data visualization
-[wiki:cookbook/BALTRAD-WMS BALTRAD-WMS](cookbook_BALTRAD_WMS)
+[BALTRAD-WMS](cookbook_BALTRAD_WMS)
 
 ## Miscellaneous
-[wiki:cookbook/HEXED-QUANTITIES Representation of ODIM quantities as a compact string signature]
+[Representation of ODIM quantities as a compact string signature](cookbook_HEXED_QUANTITIES)
 
-[[Image(cooks.jpg, 432px, nolink)]]
+<!--
+![Cooks](/images/cooks.jpg)
+-->
+
