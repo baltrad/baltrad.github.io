@@ -100,14 +100,16 @@ Updating pre-built rpms</h2>
 Node installer</h1>
 <p >The node installer can be used if you have decided to use a different operating system than CentOS Stream/RedHat or for some other reason want to control the installation process.</p>
 <p >This software installation process will make heavy use of Python to fetch software and install it. The first thing that will be done is that the installer will determine if you have a Python installation that can be used for its purposes. If it can't find one, then it will bootstrap a Python for you and continue using it. As long as you specify where all the software should be installed, preferably not in a place where it will conflict with existing things, then all will be fine. The default location is <code>/opt/baltrad</code>.</p>
-<p ><b>NOTE!!</b> BALTRAD uses some packages that has no active maintenance any longer which means that you might end up with some problems during the build process. The node-installer uses Python 3.6 which reachead EOL in December 2021 and is not updated any longer. This in turn might cause problems during the install process and we are looking into how this best should be handled. At the moment we can't upgrade to Python &gt;= 3.8 since we have dependencies towards keyczar and pycrypto which are not compatible.</p>
-<p >Another of the problems that has been experienced is if the gcc-version used is &gt;= 9 there will be problems building Python3 or odd linking problems. This can in most cases be handled by changing the compiler used. On Ubuntu 21.10 you can switch gcc-version quite easy</p>
-<pre class="fragment">%&gt; sudo apt install gcc-8 g++-8
+<h2><a class="anchor" id="in_notice"></a>
+NOTICE!!</h2>
+<p ><b> BALTRAD uses some packages that has no active maintenance any longer which means that you might end up with some problems during the build process. The node-installer uses Python 3.6 which reachead EOL in December 2021 and is not updated any longer. This in turn might cause problems during the install process and we are looking into how this best should be handled. At the moment we can't upgrade to Python &gt;= 3.8 since we have dependencies towards keyczar and pycrypto which are not compatible.</b></p>
+<p ><b>Another of the problems that has been experienced is if the gcc-version used is &gt;= 9 there will be problems building Python3 or odd linking problems. This can in most cases be handled by changing the compiler used. On Ubuntu 21.10 you can switch gcc-version quite easy</b></p>
+<p ><b></p><pre class="fragment">%&gt; sudo apt install gcc-8 g++-8
 %&gt; update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100 --slave /usr/bin/g++ g++ /usr/bin/g++-8 --slave /usr/bin/gcov gcov /usr/bin/gcov-8
-</pre><p >and then change version by</p>
-<pre class="fragment">%&gt; update-alternatives --config gcc
-</pre><p >Most Linux distributions already contain almost all of the software that we will install, so you may be wondering why we don't use them. Versions may be different, and they may be built differently, e.g. without support for a feature we need. It's pretty likely that they'll will work, but we aren't taking any unnecessary risks by building known releases ourselves.</p>
-<p >You can use our installer to download all required packages but not install them, enabling them to be moved to another machine that is protected from the Internet behind a firewall before continuing with the real installation. We will return to this issue later in this chapter.</p>
+</pre><p></b></p>
+<p ><b>and then change version by</b></p>
+<p ><b></p><pre class="fragment">%&gt; update-alternatives --config gcc
+</pre><p> </b></p>
 <h1><a class="anchor" id="in_repo"></a>
 Repository and downloading the node-installer</h1>
 <p >We run a <a href="http://git-scm.com/" target="_blank">Git</a> repository internally in the partnership, so it makes sense to use the same service for public releases.</p>
@@ -484,6 +486,6 @@ Options:
 </div><!-- PageDoc -->
 
 <hr class="footer"/><address class="footer"><small>
-</a><a href="mailto:support@baltrad.eu">support@baltrad.eu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generated on Wed Mar 2 2022 08:57:29 by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/> 1.9.2 for <a href="http://baltrad.eu/" target="_blank"><img class="footer" src="foot_BALTRAD-doxlogo.png" /></a></small></address>
+</a><a href="mailto:support@baltrad.eu">support@baltrad.eu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generated on Wed Mar 2 2022 09:19:09 by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/> 1.9.2 for <a href="http://baltrad.eu/" target="_blank"><img class="footer" src="foot_BALTRAD-doxlogo.png" /></a></small></address>
 </body>
 </html>
