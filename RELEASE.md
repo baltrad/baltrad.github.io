@@ -1,50 +1,308 @@
 # RELEASE NOTES
 
-We are changing install procedure to use pre-built RPMs and in the future Deb-packages as well. **This is the recommended installation process** but if your OS isn't here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer.
+We are changing the install procedure to use pre-built RPMs and in the future Deb-packages as well **This is the recommended installation process**. If your OS isn't here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer but this is going to be removed in the future.
 
-You can find the latest builds below:
+The latest official release is *3.1.0* and this is the one you will get if you install the RPM:s. The node installer also uses the 3.1.0 software but the dependencies are different.
 
-Latest RPM builds for CentOS/RedHat 7 [http://git.baltrad.eu/baltrad-packages/CentOS/7/latest/]
-Latest RPM builds for CentOS/RedHat 8 [http://git.baltrad.eu/baltrad-packages/CentOS/8/latest/]
+## Releases
+Latest RPM builds for CentOS Stream/RedHat 8 [https://rpm.baltrad.eu/CentOS/8/latest/]. These RPMs are updated daily with newest features.
 
+Official CentOS Stream / RedHat 8 release [https://rpm.baltrad.eu/CentOS/8/3.1/]. This is the official latest release with the release notes below.
 
-The latest official release is *2.2.1*. We are currently working on a 3.1 release and this is the one you get if you install the RPM:s but the node installer is still at 2.2.1.
+## Installation of RPMs
+The install procedure for installing the software on RedHat 8 / CentOS Stream 8 is quite simple and you are strongly encouraged to consider this approach.
 
-To install from RPM. Either fetch RPM:s from above links and install them or else you can use the yum-repositories we provide.
+The procedure for installing from RPM:s can be found [here](https://baltrad.github.io/install.html#in_rpm). You can either use the latest repo which is updated continously. Obviously, something might break using this repo
+but if that occurs the correction is usually not far behind. We appreciate if you are able to use this repository, at least in a test-situation, since this will help us out finding issues fast.
 
-The procedure for installing from RPM:s can be found [here](https://baltrad.github.io/install.html#in_rpm) but use either
+If you on the other hand want to use a release that not is updated frequently you can instead use the 3.1 repo.
 
-%> sudo wget http://git.baltrad.eu/baltrad-packages/CentOS/8/latest/baltrad-package.repo -O - > /etc/yum.repos.d/baltrad-package.repo
-
-or
-
-%> sudo wget http://git.baltrad.eu/baltrad-packages/CentOS/7/latest/baltrad-package.repo -O - > /etc/yum.repos.d/baltrad-package.repo
-
-to fetch the yum repo file.
-
+To install from the latest repo, refer to https://baltrad.github.io/install.html#in_rpm.
 
 ## To install using the node installer
+See [Node-installer instructions](https://baltrad.github.io/install.html#in_prep_node_installer). Since the node-installer is going to be phased out in the future we are only keeping the installer alive but we are not improving it continously. If you experience any problems, there are a couple of work-arounds that you can read about in the NOTICE section of the previously mentioned page.
 
-The latest official release is 2.2.1
-
-
-%> git clone git://git.baltrad.eu/node-installer.git or
-
-%> git clone http://git.baltrad.eu/node-installer.git
+\verbatim
+%> git clone https://github.com/baltrad/node-installer.git or
 
 %> cd node-installer 
 
-%> git checkout 2.2.1
+%> git checkout 3.1.0
+\endverbatim
 
-or if you already have a source repository that you have built from scratch, you can speed up the process by doing
+or if you already have a source repository that you have built from scratch, you can speed up the process by doing:
 
+\verbatim
 %> cd node-installer
+
+# If you haven't previously fetched software from github you will change repository to fetch software from by
+%> sed -i -e "s#http://git.baltrad.eu/node-installer.git#https://github.com/baltrad/node-installer.git#g"
 
 %> git checkout master
 
 %> git pull
 
-%> git checkout 2.2.1
+%> git checkout 3.1.0
+\endverbatim
+
+## Release date 2022-03-02  --- 3.1.0
+This is a major release with new features and bug corrections. 
+
+*Please note that the database will be upgraded. This means that if the database upgrade is performed separately, post config upgrade database has to be called.*
+
+The number of changes are wast and not all will be described in this description. Some interesting things is that we now only supports Python 3. Lazy loading has been introduced in rave to keep memory foot print down when processing large files. ODIM 2.3 has been added as well as ODIM 2.4. We have introduced a new modules for configuring the system when it has been installed from RPMs called baltrad-config.
+
+Changes from 2.2.1 to 3.1.0
+
+### High Level Interface to the HDF5 File Format (HLHDF)  - 0.9.1-8
+Ticket #1: Add support to build with HDF5 >= 1.12
+Ticket 688: Enable python 3 support
+Ticket 704: Allow hlhdf to be built against hdf5 where hid_t is defined as long
+Ticket 706: HLHDF fails to read variable strings after upgrade to hdf5 1.10.1
+Ticket 736: Tests does not use python libraries for specified python binary
+Ticket 743: Create packaging support for RPM and DEB
+Ticket 768: Add possibility to choose python3 binary name
+Ticket 875: Add some more metadata loading features
+Ticket 884: Migrate pyhl to be compilable against python 3.8
+
+### Radar Analysis and Visualization Environment (RAVE)  - 3.1.0-127
+Ticket #1: Scans rstart attribute not taken into account for height computations
+Ticket 14: Add support for proj >= 5
+Ticket 15: Support for ODIM 2.4 added. Strict mode added to rave. Also possiblity to read error_message to see what caused the problem saving a file
+Ticket 16: shiftData not applied when a file has been lazy loaded. Ticket 17: Add possibility to enforce old-style lon/lat coordinates when running legacy proj
+Ticket 619: VRADDH/V
+Ticket 631: Distance field for ACRR product is 'masked' where no rain is measured
+Ticket 633: Add attribute to site2d products
+Ticket 636: Chaining QC algorithms in odc_polarQC
+Ticket 639: When generating site2d images, CMT should contain area name.
+Ticket 642: Update odim_source.xml (new names for sevar and seosu)
+Ticket 646: Error in gra-adjustment of composites
+Ticket 648: Add functionality for merging polar scans and volumes
+Ticket 650: Quality field attributes
+Ticket 651: "Propagate" radar process in to products
+Ticket 655: Baltrad BRDR-field
+Ticket 656: height quality plugin
+Ticket 665: Update odim_source.xml with new name for sehud
+Ticket 672: rave-overshooting crash issue
+Ticket 674: Add support for removing malfunc scans in ApplyQc-plugin
+Ticket 676: Add functionality for choosing to only perform qc or if qc also should be applied
+Ticket 682: Dealiased radial velocities to separate sets of data
+Ticket 686: WRWP
+Ticket 688: Enable python 3 support for hlhdf
+Ticket 689: Add python 3 support.
+Ticket 693: detection range: enable processing of TH
+Ticket 697: Conversion from one set of gain+offset to another results in loss of data values
+Ticket 698: Truncation of data values could be replaced by rounding
+Ticket 699: Add possibility to control 'reprocess_qualityfields' for composite plugin via generate args
+Ticket 702: ODIM_H5 v.2.2. Converts ODIM v2.1 into ODIM v2.2 when reading files
+Ticket 711: scansun readout times and refraction
+Ticket 712: Add possibility to write cartesian products in CF-convention format.
+Ticket 721: scansun. Changed from localtime, localtime_r to gmtime, gmtime_r in function readOutTiming.
+Ticket 727: Volume with unsorted elangles gives faulty CAPPI/PCAPPI composites
+Ticket 731: Remove NR code in scansun
+Ticket 732: Add compression to CF Convention export
+Ticket 744: Create packaging support for RPM and DEB
+Ticket 747: Configurable log format for Rave
+Ticket 750: Support for additional interpolation methods in composites
+Ticket 751: Dealias improvements
+Ticket 754: Tiled compositing fails
+Ticket 764: Added support for an alternative output path (RAVESCANSUN_OUT) in rave_pgf_scansun_plugin.py. The path must be defined in rave_defines.py
+Ticket 767: Some corrupt files causes scansun to crash
+Ticket 769: Antenna gain and rxloss not correctly read in scansun for ODIM 2.1 files Ticket 771: Correct usage of astart in scansun Ticket 772: Allow scansun to work for files containing startazA but not stopazA
+Ticket 773: Add possibility to perform various matrix operations in RaveData2D
+Ticket 774: QiTotal mimimum with one field produces empty quality field
+Ticket 776: autogenerated proj names does not work in compositing
+Ticket 777: Modernized swedish radars should be added to odim_source.xml
+Ticket 778: Add melting_layer to rave database handling
+Ticket 780: scansun_main does not use full compiler flags
+Ticket 781: scansun memory pointer problem
+Ticket 783: scansun memory pointer problem
+Ticket 784: area_registry error
+Ticket 786: Update python files for python3
+Ticket 788: def.mk.in LDFLAGS does not use correct PROJ-flag
+Ticket 793: projection_registry uses invalid string join
+Ticket 794: Several programs has not been converted to Python3
+Ticket 798: Move QITOTAL_METHOD to rave_defines
+Ticket 800: Area extent should not be adjusted in x and y direction when reading writing
+Ticket 805: area_registry --list does not work after --add
+Ticket 808: Add new radar source finur
+Ticket 809: rave_tempfile creates tmp folder without full write access
+Ticket 813: A new peojection, laea15e60n, added to projection_registry.xml
+Ticket 816: Some changes to the vertical profile part of rave to be able to accomodate some new parameters and attributes
+Ticket 819: Update python objects with documentation
+Ticket 821: Support possibility that startazA / stopazA resides in parameters howgroup
+Ticket 831: Add how subgroups as part of ODIM H5 2.3 support
+Ticket 832: Add prodname as part of ODIM H5 2.3 support
+Ticket 833: Add possibility to store files in ODIM H5 2.2 and 2.3 format. Added support for zscale/zstart and zsize for cartesian volumes
+Ticket 834: Add ProductType EBASE as part of ODIM H5 2.3
+Ticket 835: Add support for astart/startazA/stopazA when calculating ray indexes.
+Ticket 841: tiled_compositing and preprocess qc doesn't work
+Ticket 850: Combine tiles might cause an empty lines between various tiles.
+Ticket 852: Increase hexquant/odim_quantities.xml to allow for 128 bits and add new ODIM 2.3 quantities
+Ticket 857: Add H5rad 2.3 to rave_defines.py
+Ticket 859: Change WMO code for nosmn
+Ticket 860: Change so that RAVESCANSUN_OUT is configurable in rave_defines.py
+Ticket 863: Add configurable RAVEIO version when writing files.
+Ticket 870: Improve performance when using rotation correction in the azimuthal calculations
+Ticket 874: Add Lazy Loading to RaveIO
+Ticket 876: Scansun crashes on erroneous H5-files
+Ticket 885: Add ray-shifting for scans and also identification of northmost ray
+Ticket 886: Avoid unessecary loading when fetching files from bdb
+Ticket 893: Add filtering to remove all quantities but wanted
+Ticket 896: Remove vpr module
+
+### The Baltrad exchange and scheduling tools (BEAST)  - 3.1.0-54
+Ticket 627: Check alive
+Ticket 629: Upload test for distribution rules always returns OK
+Ticket 637: Update of site2d route
+Ticket 641: Supervisor bdb.object.status does not search according to UTC
+Ticket 644: Error for some hexcodes
+Ticket 653: Enable sorting of routes in GUI.
+Ticket 658: Deficiency in ACRR plugin
+Ticket 659: GRA: Add possibility to isolate specific composites for generation
+Ticket 663: ACRR gets wrong accumulation time when node load is excessive
+Ticket 668: Compositing route filter possibility
+Ticket 670: Filtering in ACRR-rule sometimes cause rule execution to crash
+Ticket 679: Add option to choose between analyse only and analyse and apply for composite, volume and site2d
+Ticket 685: Filter possibility needed in Google Maps route and in WRWP route
+Ticket 700: Add possibility in compositing rules to select whether or not quality controls shall be reprocessed
+Ticket 701: Improve bdb.object.status supervisor query
+Ticket 703: Add possibility to select what fields that should be included in the wrwp product
+Ticket 714: Update postgres jdbc version to support prepareThreshold
+Ticket 717: Max-age-limit in composite rules
+Ticket 758: Use of temporary file during FTP file upload
+Ticket 811: Add support for keyhandling / security handling and exchange
+Ticket 824: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind to wrwp
+Ticket 826: Add NZ to available fields. Change dbzh and dbzh_dev to DBZH and DBZH_dev.
+Ticket 848: If same redirect address already stored for beast_authorization file is not delivered
+Ticket 849: Update beast & dex to propagate post_file redirect to dex for dex_users storage
+Ticket 853: Add support for 128 different quantities in hexquant namer
+Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
+Ticket 867: Add distribution name creator for mapping between double and string
+Ticket 868: Update with new postgresql driver
+Ticket 869: PooledFileRequestPublisher creates new factory each time a new thread is created
+Ticket 891: Added handling of groovy script routes
+Ticket 894: Add possibility to enable/disable admin mailer
+
+### Baltrad Config Tool (baltrad-config)  - 3.1.0-37
+New module for configuring a baltrad node
+
+### Baltrad Database (baltrad-db)  - 3.1.0-45
+Ticket #11: Allow for WSGIServer from both cherrypy and cheroot
+Ticket 664: Not possible to create two products only differing on area ID name
+Ticket 666: Decrease execution time of composite rules in Beast in loaded situations
+Ticket 673: Migrate from DB to FS storage
+Ticket 692: Syslog output from bdb-server
+Ticket 717: Max-age-limit in composite rules
+Ticket 718: Update to use newer version of virtualenv
+Ticket 733: Fixed some more encoding things
+Ticket 748: Handling of incomplete /what/source key-value pairs
+Ticket 749: Handling non-unique identifiers in /what/source
+Ticket 766: Merge attribute_values and nodes tables into one
+Ticket 795: baltrad-bdb-client --help causes exception
+Ticket 838: Add strategy storage so that it is possible to configure which storage variant that should be used
+Ticket 851: Add log information for debug purpose as well as performance monitoring
+Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
+Ticket 866: CacheDirStorage should not fail when finding non-uuid filenames, they should be ignored.
+Ticket 878: Change metadata storage when inserting files.
+Ticket 883: sqla.pool_size not used when creating backend
+Ticket 887: Change to use WatchedFileHandler for file logging in bdbserver
+Ticket 888: Update bdb to use werkzeug 1.0.1
+
+### Baltrad Data Exchange (baltrad-dex)  - 3.1.0-78
+Ticket 465: Added try/catch around factory method
+Ticket 627: Check alive
+Ticket 629: Upload test for distribution rules always returns OK
+Ticket 637: Update of site2d route
+Ticket 653: Enable sorting of routes in GUI
+Ticket 654: Add possiblity to duplicate Site2dRules
+Ticket 658: Deficiency in ACRR plugin
+Ticket 659: GRA: Add possibility to isolate specific composites for generation
+Ticket 660: Volume route: If opening a volume route with a null filter route itself fails.
+Ticket 661: Site2D route: If opening a Site2D route with a null filter route itself fails.
+Ticket 668: Compositing route filter possibility
+Ticket 679: Add option to choose between analyse only and analyse and apply for composite, volume and site2d
+Ticket 685: Filter possibility needed in Google Maps route and in WRWP route
+Ticket 694: Transmitting side drops data without log information
+Ticket 700: Add possibility in compositing rules to select whether or not quality controls shall be reprocessed
+Ticket 701: Improve bdb.object.status supervisor query
+Ticket 703: Add possibility to select what fields that should be included in the wrwp product
+Ticket 714: Update postgres jdbc version to support prepareThreshold
+Ticket 717: Max-age-limit in composite rules
+Ticket 765: Add individual peer-check to peer.status reporter
+Ticket 792: tld files are not allowed to reside under tags
+Ticket 812: Change key exchange / authorization / file sending to the one provided by beast
+Ticket 825: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind to wrwp
+Ticket 826: Add NZ to available fields. Change dbzh and dbzh_dev to DBZH and DBZH_dev.
+Ticket 839: Use bdb strategy storage for selecting correct storage
+Ticket 847: web.xml order of filter causes login problems
+Ticket 849: Update beast & dex to propagate post_file redirect to dex for dex_users storage
+Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
+Ticket 867: Add distribution name creator for mapping between double and string
+Ticket 868: Update with HikariCP as DB connection pool
+Ticket 873: Maintenance of dex_messages and dex_delivery_registry causes performance issues
+Ticket 877: Stacktrace when trying to show details about a file containing 16bit data
+Ticket 880: Add configuration items in dex.fc.properties for setting up client bdb properly
+Ticket 881: Add possibility to configure db.pool.size and blt manager executor size
+Ticket 891: Add support for GUI-less configuration of rules, schedules, adaptors and detectors
+Ticket 894: Add possibility to enable/disable admin mailer
+Ticket 895: When updating node settings the beast local user should also be updated
+
+### Baltrad Tomcat Node instance (baltrad-node-tomcat)  - 8.5.56-10
+New module that is available for prebuilt packages. Is a customized tomcat-server.
+
+### Baltrad Polarimetric Processing Chain (baltrad-ppc)  - 3.1.0-76
+New module for processing
+
+### Baltrad Viewer (baltrad-viewer)  - 3.1.0-6
+Old google maps plugin that has a more suitable name since open street map support has been added.
+
+Ticket 734: Add python3 support
+Ticket 755: Add support for OpenStreetMap-based maps
+Ticket 757: Full screen support in leaflet-based map
+
+### Baltrad Weather Radar Wind and Reflectivity Profiles (baltrad-wrwp)  - 3.1.0-76
+Ticket #1: wrwp_main always writes log file to default folder
+Ticket 686: WRWP
+Ticket 702: ODIM_H5 v.2.2. Converts ODIM v2.1 into ODIM v2.2 when reading files
+Ticket 703: Add possibility to select what fields that should be included in the wrwp product
+Ticket 720: WRWP, adjustement to be able to cope with volumes only having scans with lower elangles than set in the GUI route
+Ticket 725: add license statement
+Ticket 726: Enable standalone binary
+Ticket 728: Gain & offset not used for products.
+Ticket 729:WRWP
+Ticket 738: Add python3 support
+Ticket 741: PI
+Ticket 752: Add support for quantities to wrwp binary
+Ticket 816: Some changes to the vertical profile part of rave to be able to accomodate some new parameters and attributes
+Ticket 817: Some parameters added (EMAX, FF_MAX and NZ). The command-line c-code had been replaced with a python-version which permits converting to ver2.1. Two extra how-attributes have been added (task, angles)
+Ticket 823: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind in pgf plugin
+Ticket 827: Update pydocumentation for wrwp
+Ticket 864: Add configurable RAVEIO version when writing files.
+
+### Baltrad BUFR module (bbufr)  - 3.1.0-3
+Ticket 745: Create packaging support for RPM and DEB
+
+### Baltrad Beam Blockage module (beamb)  - 3.1.0-65
+Ticket 672: rave-overshooting crash issue
+Ticket 678: Add functionality for choosing to only perform qc or if qc also should be applied
+Ticket 723: add license statement
+Ticket 737: Add python3 support
+Ticket 779: Correction of some issues, see trac for more info
+Ticket 791: Need to fix shebang on beamb script
+
+### Baltrad ROPO module (bropo)  - 3.1.0-75
+Ticket 1: Encoding problems when processing file that doesn't contain NOD in what/source
+Ticket #3: Compilation problems on gcc >= 9
+Ticket 677: Add functionality for choosing to only perform qc or if qc also should be applied
+Ticket 684: "Analyze only" with bropo creates invalid DBZH datafield
+Ticket 724: add license statement
+Ticket 735: Add python3 support
+Ticket 746: Create packaging support for RPM and DEB. Fixed DESTDIR
+Ticket 782: Changed so that classification is returned as 8-bit uchar
+Ticket 787: Handle format-security compile error
+Ticket 789: Erroneous usage of gain/offset when processing data != UCHAR/CHAR
+Ticket 790: Need to fix shebang on ropo script
 
 ## Release date: 2016-08-26
 
