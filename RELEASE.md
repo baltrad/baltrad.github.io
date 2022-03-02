@@ -188,65 +188,65 @@ Changes from 2.2.1 to 3.1.0
 New module for configuring a baltrad node
 
 ### Baltrad Database (baltrad-db)  - 3.1.0-45
-Ticket #11: Allow for WSGIServer from both cherrypy and cheroot
-Ticket 664: Not possible to create two products only differing on area ID name
-Ticket 666: Decrease execution time of composite rules in Beast in loaded situations
-Ticket 673: Migrate from DB to FS storage
-Ticket 692: Syslog output from bdb-server
-Ticket 717: Max-age-limit in composite rules
-Ticket 718: Update to use newer version of virtualenv
-Ticket 733: Fixed some more encoding things
-Ticket 748: Handling of incomplete /what/source key-value pairs
-Ticket 749: Handling non-unique identifiers in /what/source
-Ticket 766: Merge attribute_values and nodes tables into one
-Ticket 795: baltrad-bdb-client --help causes exception
-Ticket 838: Add strategy storage so that it is possible to configure which storage variant that should be used
-Ticket 851: Add log information for debug purpose as well as performance monitoring
-Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
-Ticket 866: CacheDirStorage should not fail when finding non-uuid filenames, they should be ignored.
-Ticket 878: Change metadata storage when inserting files.
-Ticket 883: sqla.pool_size not used when creating backend
-Ticket 887: Change to use WatchedFileHandler for file logging in bdbserver
-Ticket 888: Update bdb to use werkzeug 1.0.1
+- Ticket #11: Allow for WSGIServer from both cherrypy and cheroot
+- Ticket 664: Not possible to create two products only differing on area ID name
+- Ticket 666: Decrease execution time of composite rules in Beast in loaded situations
+- Ticket 673: Migrate from DB to FS storage
+- Ticket 692: Syslog output from bdb-server
+- Ticket 717: Max-age-limit in composite rules
+- Ticket 718: Update to use newer version of virtualenv
+- Ticket 733: Fixed some more encoding things
+- Ticket 748: Handling of incomplete /what/source key-value pairs
+- Ticket 749: Handling non-unique identifiers in /what/source
+- Ticket 766: Merge attribute_values and nodes tables into one
+- Ticket 795: baltrad-bdb-client --help causes exception
+- Ticket 838: Add strategy storage so that it is possible to configure which storage variant that should be used
+- Ticket 851: Add log information for debug purpose as well as performance monitoring
+- Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
+- Ticket 866: CacheDirStorage should not fail when finding non-uuid filenames, they should be ignored.
+- Ticket 878: Change metadata storage when inserting files.
+- Ticket 883: sqla.pool_size not used when creating backend
+- Ticket 887: Change to use WatchedFileHandler for file logging in bdbserver
+- Ticket 888: Update bdb to use werkzeug 1.0.1
 
 ### Baltrad Data Exchange (baltrad-dex)  - 3.1.0-78
-Ticket 465: Added try/catch around factory method
-Ticket 627: Check alive
-Ticket 629: Upload test for distribution rules always returns OK
-Ticket 637: Update of site2d route
-Ticket 653: Enable sorting of routes in GUI
-Ticket 654: Add possiblity to duplicate Site2dRules
-Ticket 658: Deficiency in ACRR plugin
-Ticket 659: GRA: Add possibility to isolate specific composites for generation
-Ticket 660: Volume route: If opening a volume route with a null filter route itself fails.
-Ticket 661: Site2D route: If opening a Site2D route with a null filter route itself fails.
-Ticket 668: Compositing route filter possibility
-Ticket 679: Add option to choose between analyse only and analyse and apply for composite, volume and site2d
-Ticket 685: Filter possibility needed in Google Maps route and in WRWP route
-Ticket 694: Transmitting side drops data without log information
-Ticket 700: Add possibility in compositing rules to select whether or not quality controls shall be reprocessed
-Ticket 701: Improve bdb.object.status supervisor query
-Ticket 703: Add possibility to select what fields that should be included in the wrwp product
-Ticket 714: Update postgres jdbc version to support prepareThreshold
-Ticket 717: Max-age-limit in composite rules
-Ticket 765: Add individual peer-check to peer.status reporter
-Ticket 792: tld files are not allowed to reside under tags
-Ticket 812: Change key exchange / authorization / file sending to the one provided by beast
-Ticket 825: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind to wrwp
-Ticket 826: Add NZ to available fields. Change dbzh and dbzh_dev to DBZH and DBZH_dev.
-Ticket 839: Use bdb strategy storage for selecting correct storage
-Ticket 847: web.xml order of filter causes login problems
-Ticket 849: Update beast & dex to propagate post_file redirect to dex for dex_users storage
-Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
-Ticket 867: Add distribution name creator for mapping between double and string
-Ticket 868: Update with HikariCP as DB connection pool
-Ticket 873: Maintenance of dex_messages and dex_delivery_registry causes performance issues
-Ticket 877: Stacktrace when trying to show details about a file containing 16bit data
-Ticket 880: Add configuration items in dex.fc.properties for setting up client bdb properly
-Ticket 881: Add possibility to configure db.pool.size and blt manager executor size
-Ticket 891: Add support for GUI-less configuration of rules, schedules, adaptors and detectors
-Ticket 894: Add possibility to enable/disable admin mailer
-Ticket 895: When updating node settings the beast local user should also be updated
+- Ticket 465: Added try/catch around factory method
+- Ticket 627: Check alive
+- Ticket 629: Upload test for distribution rules always returns OK
+- Ticket 637: Update of site2d route
+- Ticket 653: Enable sorting of routes in GUI
+- Ticket 654: Add possiblity to duplicate Site2dRules
+- Ticket 658: Deficiency in ACRR plugin
+- Ticket 659: GRA: Add possibility to isolate specific composites for generation
+- Ticket 660: Volume route: If opening a volume route with a null filter route itself fails.
+- Ticket 661: Site2D route: If opening a Site2D route with a null filter route itself fails.
+- Ticket 668: Compositing route filter possibility
+- Ticket 679: Add option to choose between analyse only and analyse and apply for composite, volume and site2d
+- Ticket 685: Filter possibility needed in Google Maps route and in WRWP route
+- Ticket 694: Transmitting side drops data without log information
+- Ticket 700: Add possibility in compositing rules to select whether or not quality controls shall be reprocessed
+- Ticket 701: Improve bdb.object.status supervisor query
+- Ticket 703: Add possibility to select what fields that should be included in the wrwp product
+- Ticket 714: Update postgres jdbc version to support prepareThreshold
+- Ticket 717: Max-age-limit in composite rules
+- Ticket 765: Add individual peer-check to peer.status reporter
+- Ticket 792: tld files are not allowed to reside under tags
+- Ticket 812: Change key exchange / authorization / file sending to the one provided by beast
+- Ticket 825: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind to wrwp
+- Ticket 826: Add NZ to available fields. Change dbzh and dbzh_dev to DBZH and DBZH_dev.
+- Ticket 839: Use bdb strategy storage for selecting correct storage
+- Ticket 847: web.xml order of filter causes login problems
+- Ticket 849: Update beast & dex to propagate post_file redirect to dex for dex_users storage
+- Ticket 865: Add more logging to be able to follow what happens to a file that is injected.
+- Ticket 867: Add distribution name creator for mapping between double and string
+- Ticket 868: Update with HikariCP as DB connection pool
+- Ticket 873: Maintenance of dex_messages and dex_delivery_registry causes performance issues
+- Ticket 877: Stacktrace when trying to show details about a file containing 16bit data
+- Ticket 880: Add configuration items in dex.fc.properties for setting up client bdb properly
+- Ticket 881: Add possibility to configure db.pool.size and blt manager executor size
+- Ticket 891: Add support for GUI-less configuration of rules, schedules, adaptors and detectors
+- Ticket 894: Add possibility to enable/disable admin mailer
+- Ticket 895: When updating node settings the beast local user should also be updated
 
 ### Baltrad Tomcat Node instance (baltrad-node-tomcat)  - 8.5.56-10
 New module that is available for prebuilt packages. Is a customized tomcat-server.
@@ -257,52 +257,52 @@ New module for processing
 ### Baltrad Viewer (baltrad-viewer)  - 3.1.0-6
 Old google maps plugin that has a more suitable name since open street map support has been added.
 
-Ticket 734: Add python3 support
-Ticket 755: Add support for OpenStreetMap-based maps
-Ticket 757: Full screen support in leaflet-based map
+- Ticket 734: Add python3 support
+- Ticket 755: Add support for OpenStreetMap-based maps
+- Ticket 757: Full screen support in leaflet-based map
 
 ### Baltrad Weather Radar Wind and Reflectivity Profiles (baltrad-wrwp)  - 3.1.0-76
-Ticket #1: wrwp_main always writes log file to default folder
-Ticket 686: WRWP
-Ticket 702: ODIM_H5 v.2.2. Converts ODIM v2.1 into ODIM v2.2 when reading files
-Ticket 703: Add possibility to select what fields that should be included in the wrwp product
-Ticket 720: WRWP, adjustement to be able to cope with volumes only having scans with lower elangles than set in the GUI route
-Ticket 725: add license statement
-Ticket 726: Enable standalone binary
-Ticket 728: Gain & offset not used for products.
-Ticket 729:WRWP
-Ticket 738: Add python3 support
-Ticket 741: PI
-Ticket 752: Add support for quantities to wrwp binary
-Ticket 816: Some changes to the vertical profile part of rave to be able to accomodate some new parameters and attributes
-Ticket 817: Some parameters added (EMAX, FF_MAX and NZ). The command-line c-code had been replaced with a python-version which permits converting to ver2.1. Two extra how-attributes have been added (task, angles)
-Ticket 823: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind in pgf plugin
-Ticket 827: Update pydocumentation for wrwp
-Ticket 864: Add configurable RAVEIO version when writing files.
+- Ticket #1: wrwp_main always writes log file to default folder
+- Ticket 686: WRWP
+- Ticket 702: ODIM_H5 v.2.2. Converts ODIM v2.1 into ODIM v2.2 when reading files
+- Ticket 703: Add possibility to select what fields that should be included in the wrwp product
+- Ticket 720: WRWP, adjustement to be able to cope with volumes only having scans with lower elangles than set in the GUI route
+- Ticket 725: add license statement
+- Ticket 726: Enable standalone binary
+- Ticket 728: Gain & offset not used for products.
+- Ticket 729:WRWP
+- Ticket 738: Add python3 support
+- Ticket 741: PI
+- Ticket 752: Add support for quantities to wrwp binary
+- Ticket 816: Some changes to the vertical profile part of rave to be able to accomodate some new parameters and attributes
+- Ticket 817: Some parameters added (EMAX, FF_MAX and NZ). The command-line c-code had been replaced with a python-version which permits converting to ver2.1. Two extra how-attributes have been added (task, angles)
+- Ticket 823: Add support for maxelevationangle, maxvelocitythreshold, minsamplesizereflectivity, minsamplesizewind in pgf plugin
+- Ticket 827: Update pydocumentation for wrwp
+- Ticket 864: Add configurable RAVEIO version when writing files.
 
 ### Baltrad BUFR module (bbufr)  - 3.1.0-3
-Ticket 745: Create packaging support for RPM and DEB
+- Ticket 745: Create packaging support for RPM and DEB
 
 ### Baltrad Beam Blockage module (beamb)  - 3.1.0-65
-Ticket 672: rave-overshooting crash issue
-Ticket 678: Add functionality for choosing to only perform qc or if qc also should be applied
-Ticket 723: add license statement
-Ticket 737: Add python3 support
-Ticket 779: Correction of some issues, see trac for more info
-Ticket 791: Need to fix shebang on beamb script
+- Ticket 672: rave-overshooting crash issue
+- Ticket 678: Add functionality for choosing to only perform qc or if qc also should be applied
+- Ticket 723: add license statement
+- Ticket 737: Add python3 support
+- Ticket 779: Correction of some issues, see trac for more info
+- Ticket 791: Need to fix shebang on beamb script
 
 ### Baltrad ROPO module (bropo)  - 3.1.0-75
-Ticket 1: Encoding problems when processing file that doesn't contain NOD in what/source
-Ticket #3: Compilation problems on gcc >= 9
-Ticket 677: Add functionality for choosing to only perform qc or if qc also should be applied
-Ticket 684: "Analyze only" with bropo creates invalid DBZH datafield
-Ticket 724: add license statement
-Ticket 735: Add python3 support
-Ticket 746: Create packaging support for RPM and DEB. Fixed DESTDIR
-Ticket 782: Changed so that classification is returned as 8-bit uchar
-Ticket 787: Handle format-security compile error
-Ticket 789: Erroneous usage of gain/offset when processing data != UCHAR/CHAR
-Ticket 790: Need to fix shebang on ropo script
+- Ticket 1: Encoding problems when processing file that doesn't contain NOD in what/source
+- Ticket #3: Compilation problems on gcc >= 9
+- Ticket 677: Add functionality for choosing to only perform qc or if qc also should be applied
+- Ticket 684: "Analyze only" with bropo creates invalid DBZH datafield
+- Ticket 724: add license statement
+- Ticket 735: Add python3 support
+- Ticket 746: Create packaging support for RPM and DEB. Fixed DESTDIR
+- Ticket 782: Changed so that classification is returned as 8-bit uchar
+- Ticket 787: Handle format-security compile error
+- Ticket 789: Erroneous usage of gain/offset when processing data != UCHAR/CHAR
+- Ticket 790: Need to fix shebang on ropo script
 
 ## Release date: 2016-08-26
 
