@@ -37,8 +37,8 @@ $(function() {
   <div class="headertitle"><div class="title">Installation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section date"><dt>Date</dt><dd>May 2019 </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>3.0</dd></dl>
+<div class="textblock"><dl class="section date"><dt>Date</dt><dd>Mar 2022 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3.1</dd></dl>
 <p>Welcome to the installation chapter of the user guide. BALTRAD software has been built and installed in several countries. If it works for us, it can work for you.</p>
 <p >The golden rule when it comes to installation in BALTRAD is that instructions should always be provided in a text file called INSTALL. This is the ultimate installation reference, and it takes precidence over fancier documentation like this. It's also likelier that the INSTALL file will be updated quicker than this page. However, we will do our best to present the same information here in a more attractive way that gives a little more context than the terseness of the reference.</p>
 <p >In the following, we assume that you are interested in installing a BALTRAD <em>node</em>, which is a complete system comprising the collection of various subsystems. If you want to install any of these individual subsystems alone, please consult that package's INSTALL file.</p>
@@ -55,7 +55,7 @@ $(function() {
 </ul>
 <h1><a class="anchor" id="in_prep"></a>
 Preparation - what's going to happen</h1>
-<p >As of release 3.0 we have added automatic building of RPMs that can be used on both RedHat 8 and CentOS Stream 8 and above which is the recommended way to install the software, please refer to <a class="el" href="install.html#in_rpm">Installing pre-built rpms (CentOS Stream 8)</a>. We realise that some users are not able to use RedHat or CentOS Stream 8 and in those cases we also provide the old legacy node installer.</p>
+<p >As of release 3.1 we have added automatic building of RPMs that can be used on both RedHat 8 and CentOS Stream 8 and above which is the recommended way to install the software, please refer to <a class="el" href="install.html#in_rpm">Installing pre-built rpms (CentOS Stream 8)</a>. We realise that some users are not able to use RedHat or CentOS Stream 8 and in those cases we also provide the old legacy node installer.</p>
 <p >This means that there are two different ways to install the software and it's up to the user to decide what is the preferred way.</p>
 <p >In both situations, it's essential that you have installed a 64-bit Linux and if using the node installer that the requirements in \req req_sw is installed. <br  />
 </p>
@@ -98,9 +98,15 @@ Updating pre-built rpms</h2>
 <pre class="fragment">%&gt; yum update `yum list installed | grep baltrad-repo | awk '{print $1;}'`
 </pre><h1><a class="anchor" id="in_prep_node_installer"></a>
 Node installer</h1>
-<p >The node installer can be used if you have decided to use a different operating system than CentOS/RedHat or for some other reason want to control the installation process.</p>
+<p >The node installer can be used if you have decided to use a different operating system than CentOS Stream/RedHat or for some other reason want to control the installation process.</p>
 <p >This software installation process will make heavy use of Python to fetch software and install it. The first thing that will be done is that the installer will determine if you have a Python installation that can be used for its purposes. If it can't find one, then it will bootstrap a Python for you and continue using it. As long as you specify where all the software should be installed, preferably not in a place where it will conflict with existing things, then all will be fine. The default location is <code>/opt/baltrad</code>.</p>
-<p >Most Linux distributions already contain almost all of the software that we will install, so you may be wondering why we don't use them. Versions may be different, and they may be built differently, e.g. without support for a feature we need. It's pretty likely that they'll will work, but we aren't taking any unnecessary risks by building known releases ourselves.</p>
+<p ><b>NOTE!!</b> BALTRAD uses some packages that has no active maintenance any longer which means that you might end up with some problems during the build process. The node-installer uses Python 3.6 which reachead EOL in December 2021 and is not updated any longer. This in turn might cause problems during the install process and we are looking into how this best should be handled. At the moment we can't upgrade to Python &gt;= 3.8 since we have dependencies towards keyczar and pycrypto which are not compatible.</p>
+<p >Another of the problems that has been experienced is if the gcc-version used is &gt;= 9 there will be problems building Python3 or odd linking problems. This can in most cases be handled by changing the compiler used. On Ubuntu 21.10 you can switch gcc-version quite easy</p>
+<pre class="fragment">%&gt; sudo apt install gcc-8 g++-8
+%&gt; update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 100 --slave /usr/bin/g++ g++ /usr/bin/g++-8 --slave /usr/bin/gcov gcov /usr/bin/gcov-8
+</pre><p >and then change version by</p>
+<pre class="fragment">%&gt; update-alternatives --config gcc
+</pre><p >Most Linux distributions already contain almost all of the software that we will install, so you may be wondering why we don't use them. Versions may be different, and they may be built differently, e.g. without support for a feature we need. It's pretty likely that they'll will work, but we aren't taking any unnecessary risks by building known releases ourselves.</p>
 <p >You can use our installer to download all required packages but not install them, enabling them to be moved to another machine that is protected from the Internet behind a firewall before continuing with the real installation. We will return to this issue later in this chapter.</p>
 <h1><a class="anchor" id="in_repo"></a>
 Repository and downloading the node-installer</h1>
@@ -478,6 +484,6 @@ Options:
 </div><!-- PageDoc -->
 
 <hr class="footer"/><address class="footer"><small>
-</a><a href="mailto:support@baltrad.eu">support@baltrad.eu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generated on Wed Mar 2 2022 08:32:07 by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/> 1.9.2 for <a href="http://baltrad.eu/" target="_blank"><img class="footer" src="foot_BALTRAD-doxlogo.png" /></a></small></address>
+</a><a href="mailto:support@baltrad.eu">support@baltrad.eu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generated on Wed Mar 2 2022 08:57:29 by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.png" alt="doxygen"/> 1.9.2 for <a href="http://baltrad.eu/" target="_blank"><img class="footer" src="foot_BALTRAD-doxlogo.png" /></a></small></address>
 </body>
 </html>
