@@ -22,27 +22,24 @@ To install from the latest repo, refer to [https://baltrad.github.io/install.htm
 ## To install using the node installer
 See [Node-installer instructions](https://baltrad.github.io/install.html#in_prep_node_installer). Since the node-installer is going to be phased out in the future we are only keeping the installer alive but we are not improving it continously. If you experience any problems, there are a couple of work-arounds that you can read about in the NOTICE section of the previously mentioned page.
 
-\verbatim
-
+'''
 %> git clone https://github.com/baltrad/node-installer.git or
 
 %> cd node-installer 
 
 %> git checkout 3.1.0
-
-\endverbatim
+'''
 
 or if you already have a source repository that you have built from scratch, you can speed up the process by doing:
 
-\verbatim
+'''
 %> cd node-installer
-\endverbatim
+'''
+If you haven't previously fetched software from github you will change repository to fetch software from by
 
-# If you haven't previously fetched software from github you will change repository to fetch software from by
-\verbatim
+'''
 %> sed -i -e "s#http://git.baltrad.eu/node-installer.git#https://github.com/baltrad/node-installer.git#g"
-\endverbatim
-
+'''
 
 \verbatim
 %> git checkout master
