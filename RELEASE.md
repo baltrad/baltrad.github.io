@@ -1,6 +1,6 @@
 # RELEASE NOTES
 
-We are changing the install procedure to use pre-built RPMs and in the future Deb-packages as well **This is the recommended installation process**. If you aren't able to use the prebuilt packages we are offering here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer which is not actively maintained.
+We are changing the install procedure to use pre-built RPMs and later we are also going to add pre-built deb-packages. **Installation by using prebuild packages is the recommended installation process**. If you aren't able to use the prebuilt packages we are offering here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer which is not actively maintained.
 
 The latest official release is *3.1.0* and this is the one you will get if you install the RPM:s. The node installer also uses the 3.1.0 software but the dependencies are different.
 
