@@ -22,9 +22,9 @@ We are changing the install procedure to use pre-built RPMs and later we are als
 ## Releases
 The latest official release is *3.1.0* and this is the one you will get if you install the RPM:s. The node installer also uses the 3.1.0 software but the dependencies are different.
 
-Latest RPM builds for [CentOS Stream 8/RedHat 8](https://rpm.baltrad.eu/CentOS/8/latest/). These RPMs are updated daily with newest features.
-
 Official [CentOS Stream 8/RedHat 8 release](https://rpm.baltrad.eu/CentOS/8/3.1/). This is the official latest release with the release notes below.
+
+Latest RPM builds for [CentOS Stream 8/RedHat 8](https://rpm.baltrad.eu/CentOS/8/latest/). These RPMs are updated daily with newest features and should be used if you want to be up to date.
 
 ## Installation of RPMs
 The install procedure for installing the software on RedHat 8 / CentOS Stream 8 is quite simple and you are strongly encouraged to consider this approach.
