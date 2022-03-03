@@ -1,6 +1,6 @@
 # RELEASE NOTES
 
-We are changing the install procedure to use pre-built RPMs and in the future Deb-packages as well **This is the recommended installation process**. If your OS isn't here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer but this is going to be removed in the future.
+We are changing the install procedure to use pre-built RPMs and in the future Deb-packages as well **This is the recommended installation process**. If you aren't able to use the prebuilt packages we are offering here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer which is not actively maintained.
 
 The latest official release is *3.1.0* and this is the one you will get if you install the RPM:s. The node installer also uses the 3.1.0 software but the dependencies are different.
 
@@ -23,21 +23,28 @@ To install from the latest repo, refer to [https://baltrad.github.io/install.htm
 See [Node-installer instructions](https://baltrad.github.io/install.html#in_prep_node_installer). Since the node-installer is going to be phased out in the future we are only keeping the installer alive but we are not improving it continously. If you experience any problems, there are a couple of work-arounds that you can read about in the NOTICE section of the previously mentioned page.
 
 \verbatim
+
 %> git clone https://github.com/baltrad/node-installer.git or
 
 %> cd node-installer 
 
 %> git checkout 3.1.0
+
 \endverbatim
 
 or if you already have a source repository that you have built from scratch, you can speed up the process by doing:
 
 \verbatim
 %> cd node-installer
+\endverbatim
 
 # If you haven't previously fetched software from github you will change repository to fetch software from by
+\verbatim
 %> sed -i -e "s#http://git.baltrad.eu/node-installer.git#https://github.com/baltrad/node-installer.git#g"
+\endverbatim
 
+
+\verbatim
 %> git checkout master
 
 %> git pull
@@ -50,11 +57,13 @@ This is a major release with new features and bug corrections.
 
 *Please note that the database will be upgraded. This means that if the database upgrade is performed separately, post config upgrade database has to be called.*
 
-The number of changes are wast and not all will be described in this description. Some interesting things is that we now only supports Python 3. Lazy loading has been introduced in rave to keep memory foot print down when processing large files. ODIM 2.3 has been added as well as ODIM 2.4. We have introduced a new modules for configuring the system when it has been installed from RPMs called baltrad-config.
+The number of changes are wast and not all will be described in this description. Some interesting things is that we now only supports Python 3. Lazy loading has been introduced in rave to keep memory foot print down when processing large files. ODIM 2.3 has been added as well as most of the functionality to support ODIM 2.4. We have introduced a new modules for configuring the system when it has been installed from RPMs called baltrad-config.
+
+The first version is the tag, the second version is the actual version number of the package of the RPM. For example, since hlhdf has version 0.9.1-8. The RPMs will be named: hlhdf-0.9.1-8.el8.x86_64.rpm, hlhdf-devel-0.9.1-8.el8.x86_64.rpm and so on.
 
 Changes from 2.2.1 to 3.1.0
 
-### High Level Interface to the HDF5 File Format (HLHDF)  - 0.9.1-8
+### High Level Interface to the HDF5 File Format (HLHDF)  - hlhdf-build-11 - 0.9.1-8
 - Ticket #1: Add support to build with HDF5 >= 1.12
 - Ticket 688: Enable python 3 support
 - Ticket 704: Allow hlhdf to be built against hdf5 where hid_t is defined as long
@@ -65,7 +74,7 @@ Changes from 2.2.1 to 3.1.0
 - Ticket 875: Add some more metadata loading features
 - Ticket 884: Migrate pyhl to be compilable against python 3.8
 
-### Radar Analysis and Visualization Environment (RAVE)  - 3.1.0-127
+### Radar Analysis and Visualization Environment (RAVE)  - rave-build-28 - 3.1.0-127
 - Ticket #1: Scans rstart attribute not taken into account for height computations
 - Ticket 14: Add support for proj >= 5
 - Ticket 15: Support for ODIM 2.4 added. Strict mode added to rave. Also possiblity to read error_message to see what caused the problem saving a file
@@ -151,7 +160,7 @@ Changes from 2.2.1 to 3.1.0
 - Ticket 893: Add filtering to remove all quantities but wanted
 - Ticket 896: Remove vpr module
 
-### The Baltrad exchange and scheduling tools (BEAST)  - 3.1.0-54
+### The Baltrad exchange and scheduling tools (BEAST)  - beast-build-18 - 3.1.0-54
 - Ticket 627: Check alive
 - Ticket 629: Upload test for distribution rules always returns OK
 - Ticket 637: Update of site2d route
@@ -184,10 +193,10 @@ Changes from 2.2.1 to 3.1.0
 - Ticket 891: Added handling of groovy script routes
 - Ticket 894: Add possibility to enable/disable admin mailer
 
-### Baltrad Config Tool (baltrad-config)  - 3.1.0-37
+### Baltrad Config Tool (baltrad-config)  - baltrad-config-build-3 - 3.1.0-37
 New module for configuring a baltrad node
 
-### Baltrad Database (baltrad-db)  - 3.1.0-45
+### Baltrad Database (baltrad-db)  - baltrad-db-build-13 - 3.1.0-45
 - Ticket #11: Allow for WSGIServer from both cherrypy and cheroot
 - Ticket 664: Not possible to create two products only differing on area ID name
 - Ticket 666: Decrease execution time of composite rules in Beast in loaded situations
@@ -209,7 +218,7 @@ New module for configuring a baltrad node
 - Ticket 887: Change to use WatchedFileHandler for file logging in bdbserver
 - Ticket 888: Update bdb to use werkzeug 1.0.1
 
-### Baltrad Data Exchange (baltrad-dex)  - 3.1.0-78
+### Baltrad Data Exchange (baltrad-dex)  - baltrad-dex-build-11 - 3.1.0-78
 - Ticket 465: Added try/catch around factory method
 - Ticket 627: Check alive
 - Ticket 629: Upload test for distribution rules always returns OK
@@ -248,20 +257,20 @@ New module for configuring a baltrad node
 - Ticket 894: Add possibility to enable/disable admin mailer
 - Ticket 895: When updating node settings the beast local user should also be updated
 
-### Baltrad Tomcat Node instance (baltrad-node-tomcat)  - 8.5.56-10
+### Baltrad Tomcat Node instance (baltrad-node-tomcat)  - N/A - 8.5.56-10
 New module that is available for prebuilt packages. Is a customized tomcat-server.
 
-### Baltrad Polarimetric Processing Chain (baltrad-ppc)  - 3.1.0-76
+### Baltrad Polarimetric Processing Chain (baltrad-ppc)  - baltrad-ppc-build-13 - 3.1.0-76
 New module for processing
 
-### Baltrad Viewer (baltrad-viewer)  - 3.1.0-6
+### Baltrad Viewer (baltrad-viewer)  - baltrad-viewer-build-1 - 3.1.0-6
 Old google maps plugin that has a more suitable name since open street map support has been added.
 
 - Ticket 734: Add python3 support
 - Ticket 755: Add support for OpenStreetMap-based maps
 - Ticket 757: Full screen support in leaflet-based map
 
-### Baltrad Weather Radar Wind and Reflectivity Profiles (baltrad-wrwp)  - 3.1.0-76
+### Baltrad Weather Radar Wind and Reflectivity Profiles (baltrad-wrwp)  - baltrad-wrwp-build-15 - 3.1.0-76
 - Ticket #1: wrwp_main always writes log file to default folder
 - Ticket 686: WRWP
 - Ticket 702: ODIM_H5 v.2.2. Converts ODIM v2.1 into ODIM v2.2 when reading files
@@ -280,10 +289,10 @@ Old google maps plugin that has a more suitable name since open street map suppo
 - Ticket 827: Update pydocumentation for wrwp
 - Ticket 864: Add configurable RAVEIO version when writing files.
 
-### Baltrad BUFR module (bbufr)  - 3.1.0-3
+### Baltrad BUFR module (bbufr)  - bbufr-build-6 - 3.1.0-3
 - Ticket 745: Create packaging support for RPM and DEB
 
-### Baltrad Beam Blockage module (beamb)  - 3.1.0-65
+### Baltrad Beam Blockage module (beamb)  - beamb-build-14 - 3.1.0-65
 - Ticket 672: rave-overshooting crash issue
 - Ticket 678: Add functionality for choosing to only perform qc or if qc also should be applied
 - Ticket 723: add license statement
@@ -291,7 +300,7 @@ Old google maps plugin that has a more suitable name since open street map suppo
 - Ticket 779: Correction of some issues, see trac for more info
 - Ticket 791: Need to fix shebang on beamb script
 
-### Baltrad ROPO module (bropo)  - 3.1.0-75
+### Baltrad ROPO module (bropo)  - bropo-build-22 - 3.1.0-75
 - Ticket 1: Encoding problems when processing file that doesn't contain NOD in what/source
 - Ticket #3: Compilation problems on gcc >= 9
 - Ticket 677: Add functionality for choosing to only perform qc or if qc also should be applied
