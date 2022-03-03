@@ -12,10 +12,9 @@ For Debian & Ubuntu enhusiasts, we are working on providing prebuilt packages fo
 
 If deciding to upgrade the system there are a few things to consider.
 - We aren't verifying the node-installer on a lot of distributions any more. Usually only CentOS 8 and Ubuntu 20.04.
-- If using newer versions of Ubuntu that uses gcc >= 9 there might be problems building the software and you will find more information about that here: 
-- It might be some problems upgrading an old python2.7 node installer installation with new variant since we are jumping to 3.6.5 which means that it's probably better to rebuild everything.
+- If using newer versions of Ubuntu that uses gcc >= 9 there might be problems building the software and you will find more information about that [here](https://baltrad.github.io/install.html#in_notice)
+- It might be some problems upgrading an old python2.7 node installer installation with tje new variant since we are jumping to 3.6.5. This means that it's probably better to rebuild everything.
 - In either case, remember to take a backup of the configuration and keys (/opt/baltrad/etc)
-
 
 ## New install procedure
 We are changing the install procedure to use pre-built RPMs and later we are also going to add pre-built deb-packages. **Installation by using prebuild packages is the recommended installation process**. If you aren't able to use the prebuilt packages we are offering here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer which is not actively maintained.
