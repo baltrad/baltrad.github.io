@@ -1,10 +1,28 @@
 # RELEASE NOTES
 
+It has been quite silent the last few years when it comes to releases but now it's time again. We have done quite a few large changes that will simplify installation and setup of a server provided that you are using RedHat / CentOS. Protocol-wise it is completely backward compatible so it will not affect communication with other nodes. 
+
+We have moved most of the software to [github](https://github.com/baltrad). The documentation can be found [here](https://baltrad.github.io).  If you want to contribute just let us know.
+
+Since we know that there have been some difficulties with the installation we are currently generating prebuilt RPMs for CentOS Stream 8 and RedHat 8 and the configuration of the system is done using a specific configuration tool (baltrad-config). You can read more about it [here](https://baltrad.github.io/install.html) and [here](https://baltrad.github.io/config_rpm.html). 
+
+If you are not able to install the software using the RPMs you will still be able to use the node-installer but it is going to be removed in the future. We are proivding the Python 3.6.5 version when using the node-installer which unfortunately reached EOL in December last yearedfand we are looking into how to upgrade this but due to some very important dependencies that are not compatible with Python >= 3.8 we can't just upgrade the Python version. We also can't replace the dependencies since it would break backward compatibility.
+
+For Debian & Ubuntu enhusiasts, we are working on providing prebuilt packages for some distributions as well but that has been put in the back burner due to other commitments.
+
+If deciding to upgrade the system there are a few things to consider.
+- We aren't verifying the node-installer on a lot of distributions any more. Usually only CentOS 8 and Ubuntu 20.04.
+- If using newer versions of Ubuntu that uses gcc >= 9 there might be problems building the software and you will find more information about that here: 
+- It might be some problems upgrading an old python2.7 node installer installation with new variant since we are jumping to 3.6.5 which means that it's probably better to rebuild everything.
+- In either case, remember to take a backup of the configuration and keys (/opt/baltrad/etc)
+
+
+## New install procedure
 We are changing the install procedure to use pre-built RPMs and later we are also going to add pre-built deb-packages. **Installation by using prebuild packages is the recommended installation process**. If you aren't able to use the prebuilt packages we are offering here or if you have some other reason for not wanting to install from pre-built packages, then you will have to rely on the node-installer which is not actively maintained.
 
+## Releases
 The latest official release is *3.1.0* and this is the one you will get if you install the RPM:s. The node installer also uses the 3.1.0 software but the dependencies are different.
 
-## Releases
 Latest RPM builds for [CentOS Stream 8/RedHat 8](https://rpm.baltrad.eu/CentOS/8/latest/). These RPMs are updated daily with newest features.
 
 Official [CentOS Stream 8/RedHat 8 release](https://rpm.baltrad.eu/CentOS/8/3.1/). This is the official latest release with the release notes below.
