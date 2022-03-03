@@ -48,7 +48,7 @@ or if you already have a source repository that you have built from scratch, you
 ## Release date 2022-03-02  --- 3.1.0
 This is a major release with new features and bug corrections. 
 
-*Please note that the database will be upgraded. This means that if the database upgrade is performed separately, post config upgrade database has to be called.*
+*Please note that the database needs to be upgraded. This means that you either will have to use baltrad-config with --update-database option or if you are using the node installer it will be done during the installation. *
 
 The number of changes are wast and not all will be described in this description. Some interesting things is that we now only supports Python 3. Lazy loading has been introduced in rave to keep memory foot print down when processing large files. ODIM 2.3 has been added as well as most of the functionality to support ODIM 2.4. We have introduced a new modules for configuring the system when it has been installed from RPMs called baltrad-config.
 
