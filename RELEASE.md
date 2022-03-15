@@ -6,14 +6,14 @@ We have moved most of the software to [github](https://github.com/baltrad). The 
 
 Since we know that there have been some difficulties with the installation we are currently generating prebuilt RPMs for CentOS Stream 8 and RedHat 8 and the configuration of the system is done using a specific configuration tool (baltrad-config). You can read more about it [here](https://baltrad.github.io/install.html) and [here](https://baltrad.github.io/config_rpm.html). 
 
-If you are not able to install the software using the RPMs you will still be able to use the node-installer but it is going to be removed in the future. We are proivding the Python 3.6.5 version when using the node-installer which unfortunately reached EOL in December last yearedfand we are looking into how to upgrade this but due to some very important dependencies that are not compatible with Python >= 3.8 we can't just upgrade the Python version. We also can't replace the dependencies since it would break backward compatibility.
+If you are not able to install the software using the RPMs you will still be able to use the node-installer but it is going to be removed in the future. We are providing the Python 3.6.5 version when using the node-installer which unfortunately reached EOL in December last year and we are looking into how to upgrade this but due to some very important dependencies that are not compatible with Python >= 3.8 we can't just upgrade the Python version. We also can't replace the dependencies since it would break backward compatibility.
 
-For Debian & Ubuntu enhusiasts, we are working on providing prebuilt packages for some distributions as well but that has been put in the back burner due to other commitments.
+For Debian & Ubuntu enthusiasts, we are working on providing prebuilt packages for some distributions as well but that has been put in the back burner due to other commitments.
 
 If deciding to upgrade the system there are a few things to consider.
 - We aren't verifying the node-installer on a lot of distributions any more. Usually only CentOS 8 and Ubuntu 20.04.
 - If using newer versions of Ubuntu that uses gcc >= 9 there might be problems building the software and you will find more information about that [here](https://baltrad.github.io/install.html#in_notice)
-- It might be some problems upgrading an old python2.7 node installer installation with tje new variant since we are jumping to 3.6.5. This means that it's probably better to rebuild everything.
+- It might be some problems upgrading an old python2.7 node installer installation with the new variant since we are jumping to 3.6.5. This means that it's probably better to rebuild everything.
 - In either case, remember to take a backup of the configuration and keys (/opt/baltrad/etc)
 
 ## New install procedure
@@ -29,15 +29,14 @@ Latest RPM builds for [CentOS Stream 8/RedHat 8](https://rpm.baltrad.eu/CentOS/8
 ## Installation of RPMs
 The install procedure for installing the software on RedHat 8 / CentOS Stream 8 is quite simple and you are strongly encouraged to consider this approach.
 
-The procedure for installing from RPM:s can be found [here](https://baltrad.github.io/install.html#in_rpm). You can either use the latest repo which is updated continously. Obviously, something might break using this repo
-but if that occurs the correction is usually not far behind. We appreciate if you are able to use this repository, at least in a test-situation, since this will help us out finding issues fast.
+The procedure for installing from RPM:s can be found [here](https://baltrad.github.io/install.html#in_rpm). You can either use the latest repo which is updated continuously. Obviously, something might break using this repo but if that occurs the correction is usually not far behind. We appreciate if you are able to use this repository, at least in a test-situation, since this will help us out finding issues fast.
 
 If you on the other hand want to use a release that not is updated frequently you can instead use the 3.1 repo.
 
 To install from the latest repo, refer to [https://baltrad.github.io/install.html#in_rpm](https://baltrad.github.io/install.html#in_rpm).
 
 ## To install using the node installer
-See [Node-installer instructions](https://baltrad.github.io/install.html#in_prep_node_installer). Since the node-installer is going to be phased out in the future we are only keeping the installer alive but we are not improving it continously. If you experience any problems, there are a couple of work-arounds that you can read about in the NOTICE section of the previously mentioned page.
+See [Node-installer instructions](https://baltrad.github.io/install.html#in_prep_node_installer). Since the node-installer is going to be phased out in the future we are only keeping the installer alive but we are not improving it continuously. If you experience any problems, there are a couple of work-arounds that you can read about in the NOTICE section of the previously mentioned page.
 
 ```
 %> git clone https://github.com/baltrad/node-installer.git or
@@ -65,9 +64,9 @@ or if you already have a source repository that you have built from scratch, you
 ## Release date 2022-03-02  --- 3.1.0
 This is a major release with new features and bug corrections. 
 
-*Please note that the database needs to be upgraded. This means that you either will have to use baltrad-config with --update-database option or if you are using the node installer it will be done during the installation. *
+*Please note that the database needs to be upgraded. This means that you either will have to use baltrad-config with --update-database option or if you are using the node installer it will be done during the installation.*
 
-The number of changes are wast and not all will be described in this description. Some interesting things is that we now only supports Python 3. Lazy loading has been introduced in rave to keep memory foot print down when processing large files. ODIM 2.3 has been added as well as most of the functionality to support ODIM 2.4. We have introduced a new modules for configuring the system when it has been installed from RPMs called baltrad-config.
+The number of changes are vast and not all will be described in this description. Some interesting things is that we now only support Python 3. Lazy loading has been introduced in rave to keep memory foot print down when processing large files. ODIM 2.3 has been added as well as most of the functionality to support ODIM 2.4. We have introduced a new modules for configuring the system when it has been installed from RPMs called baltrad-config.
 
 The first version is the tag, the second version is the actual version number of the package of the RPM. For example, since hlhdf has version 0.9.1-8. The RPMs will be named: hlhdf-0.9.1-8.el8.x86_64.rpm, hlhdf-devel-0.9.1-8.el8.x86_64.rpm and so on.
 
